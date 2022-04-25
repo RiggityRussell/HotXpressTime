@@ -1,0 +1,83 @@
+﻿<Page x:Class="HotXpressTime.Check_Out"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotXpressTime"
+      mc:Ignorable="d" 
+      d:DesignHeight="1792" d:DesignWidth="828"
+      Title="Check_Out" Width="828" Height="1792">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" 
+                   Height="72" 
+                   Margin="0,230,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Payment Info" 
+                   VerticalAlignment="Top" 
+                   FontSize="50"
+                   FontWeight="Bold"
+                   Background="LightGray"
+                   TextAlignment="Center"
+                   
+                   Width="480"/>
+        <TextBox HorizontalAlignment="Left" 
+
+            Height="69" 
+                 Margin="10,497,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Name on Card" 
+                 VerticalAlignment="Top"
+                 FontSize="52"
+                 TextAlignment="Center"
+                 Background="#FFF6F6F6"
+                 Foreground="DarkGray"
+                 Width="780"/>
+        <TextBox HorizontalAlignment="Left" 
+            Height="69" 
+            Margin="10,648,0,0" 
+            TextWrapping="Wrap" 
+            Text="Card Number" 
+            VerticalAlignment="Top"
+            FontSize="52"
+            TextAlignment="Center"
+            Background="#FFF6F6F6"
+            Foreground="DarkGray"
+            Width="780"/>
+        <Button Content="Enter Information" HorizontalAlignment="Center" 
+            Margin="0,1022,0,0" VerticalAlignment="Top" 
+            Width="540" Height="67" 
+            Background="LightCoral"
+            Foreground="WhiteSmoke"
+            FontFamily="Arial"
+            FontSize="40">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox HorizontalAlignment="Left" 
+            Height="69" 
+            Margin="119,810,0,0" 
+            TextWrapping="Wrap" 
+            Text="EXP" 
+            VerticalAlignment="Top"
+            FontSize="52"
+            TextAlignment="Center"
+            Background="#FFF6F6F6"
+            Foreground="DarkGray"
+            Width="237"/>
+        <TextBox HorizontalAlignment="Left" 
+            Height="69" 
+            Margin="436,810,0,0" 
+            TextWrapping="Wrap" 
+            Text="CVV" 
+            VerticalAlignment="Top"
+            FontSize="52"
+            TextAlignment="Center"
+            Background="#FFF6F6F6"
+            Foreground="DarkGray"
+            Width="218"/>
+    </Grid>
+</Page>
