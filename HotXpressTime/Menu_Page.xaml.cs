@@ -24,5 +24,10 @@ namespace HotXpressTime
         {
             InitializeComponent();
         }
+
+        private void BWF_Nav(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

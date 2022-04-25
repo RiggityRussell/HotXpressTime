@@ -16,8 +16,9 @@
                 Height="208" 
                 Margin="0,532,0,0" 
                 VerticalAlignment="Top"
-                Width="808">
-            <Image Source="images/baconfigs.PNG" Width="808" Height="208" Stretch="Fill"/>
+                Width="808"
+                Click="BWF_Nav">
+            <Image x:Name="BWF_Button" Source="images/baconfigs.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
         <Button  
                 HorizontalAlignment="Left" 
@@ -26,7 +27,7 @@
                 Height="208" 
                 VerticalAlignment="Center"
                 Width="808">
-            <Image Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
+            <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
         <Button  
                 HorizontalAlignment="Left" 
@@ -36,7 +37,7 @@
                 Margin="0,1068,0,0" 
                 VerticalAlignment="Top"
                 Width="808">
-            <Image Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
+            <Image x:Name="FS_Button" Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
         <Button  
                 HorizontalAlignment="Left" 
@@ -46,7 +47,7 @@
                 Margin="0,1328,0,0" 
                 VerticalAlignment="Top"
                 Width="808">
-            <Image Source="images/cotta.PNG" Width="808" Height="208" Stretch="Fill"/>
+            <Image x:Name="FP_Button" Source="images/cotta.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
 
         <Button 
@@ -57,8 +58,83 @@
                 Margin="0,1576,0,0" 
                 VerticalAlignment="Top"
                 Width="808">
-            <Image Source="images/tart.PNG" Width="808" Height="208" Stretch="Fill"/>
+            <Image x:Name="FT_Button" Source="images/tart.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
+        <TextBlock Text="Bacon Wrapped Figs"
+                   HorizontalAlignment="Center" 
+                   Height="112" Margin="0,580,0,0" 
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top" Width="594"
+                   FontSize="65">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="6"
+      Direction="225"
+      Color="BlanchedAlmond"
+     
+     BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="Pulled Pork Fig Tacos"
+                   HorizontalAlignment="Center" 
+                   Height="112" Margin="0,826,0,0" 
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top" Width="642"
+                   FontSize="65">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="6"
+      Direction="225"
+      Color="WhiteSmoke"
+     
+     BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="Fig Smoothie"
+                   HorizontalAlignment="Center" 
+                   Height="112" Margin="0,1116,0,0" 
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top" Width="386"
+                   FontSize="65">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="6"
+      Direction="225"
+      Color="BlanchedAlmond"
+     
+     BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="Fig Panacotta"
+                   HorizontalAlignment="Left" 
+                   Height="112" Margin="211,1376,0,0" 
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top" Width="386"
+                   FontSize="65">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="6"
+      Direction="225"
+      Color="BlanchedAlmond"
+     
+     BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="Fig Tart"
+                   HorizontalAlignment="Left" 
+                   Height="112" Margin="289,1624,0,0" 
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top" Width="230"
+                   FontSize="65">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="6"
+      Direction="225"
+      Color="WhiteSmoke"
+     
+     BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
 
     </Grid>
 </Page>
