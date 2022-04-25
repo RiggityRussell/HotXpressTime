@@ -47,6 +47,7 @@ namespace HotXpressTime
         {
             MainWindowFrame.NavigationService.Navigate(new Uri("Login_Landing_Page.xaml", UriKind.Relative));
             LoginButton.Visibility = Visibility.Collapsed;
+
         }
     }
 }
