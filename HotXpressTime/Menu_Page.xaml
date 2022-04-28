@@ -15,6 +15,7 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,532,0,0" 
+            Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808"
                 Click="BWF_Nav">
@@ -25,6 +26,7 @@
                 FontFamily="Georgia"
                 FontSize="50"
                 Height="208" 
+            Cursor="Hand"
                 VerticalAlignment="Center"
                 Width="808">
             <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
@@ -35,6 +37,7 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,1068,0,0" 
+            Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808">
             <Image x:Name="FS_Button" Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
@@ -45,6 +48,7 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,1328,0,0" 
+            Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808">
             <Image x:Name="FP_Button" Source="images/cotta.PNG" Width="808" Height="208" Stretch="Fill"/>
@@ -56,6 +60,7 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,1576,0,0" 
+            Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808">
             <Image x:Name="FT_Button" Source="images/tart.PNG" Width="808" Height="208" Stretch="Fill"/>
@@ -64,6 +69,7 @@
                    HorizontalAlignment="Center" 
                    Height="112" Margin="0,580,0,0" 
                    TextWrapping="Wrap"
+                   
                    VerticalAlignment="Top" Width="594"
                    FontSize="65">
             <TextBlock.Effect>

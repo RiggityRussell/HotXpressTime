@@ -20,6 +20,7 @@
                     MinWidth="300" 
                     MinHeight="100" 
                     Margin="5,5,5,5"
+                    Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="navToMenu">
@@ -34,6 +35,7 @@
                     MinWidth="300" 
                     MinHeight="100" 
                     Margin="0,5,5,5"
+Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="Nav_ToCheckout">
@@ -49,6 +51,7 @@
                     MaxWidth="190"
                     MinHeight="100" 
                     Margin="0,5,0,5"
+                    Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="Nav_ToLogin">
@@ -72,6 +75,46 @@
             TextAlignment="Center"
             VerticalAlignment="Top" 
             Width="594"/>
-    </Grid>
+            <TextBlock HorizontalAlignment="Left" 
+                       Height="104" 
+                       Margin="9,134,0,0" 
+                       TextWrapping="Wrap" 
+                       Text=" Wait Time: 15 Minutes" 
+                       VerticalAlignment="Top" 
+                       Width="793"
+                       Background="SandyBrown"
+                       Foreground="GhostWhite"
+                       FontSize="70"
+                       Opacity=".9"/>
+            <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                Width="396" Height="67" 
+                Background="LightCoral"
+                Foreground="WhiteSmoke"
+                Cursor="Hand"
+                FontFamily="Arial"
+                FontSize="40" Margin="0,896,0,0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="SignUpButton" Content="Sign Up" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Width="396" Height="67" 
+                Background="LightSeaGreen"
+                Foreground="WhiteSmoke"
+                Cursor="Hand"
+                FontFamily="Arial"
+                FontSize="40" Margin="0,998,0,0" Click="NavTo_Sign_Up_Page">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+        </Grid>
     </ScrollViewer>
 </Window>

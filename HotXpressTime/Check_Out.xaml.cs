@@ -24,5 +24,10 @@ namespace HotXpressTime
         {
             InitializeComponent();
         }
+
+        private void saveInfo(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Name: {NameOnCard.Text} \nCard Number: {cardNumber.Text} \nEXP: {EXP.Text}, CVV: {CVV.Text}");
+        }
     }
 }

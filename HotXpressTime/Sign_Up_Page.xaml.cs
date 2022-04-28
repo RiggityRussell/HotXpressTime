@@ -12,33 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO;
 
 namespace HotXpressTime
 {
     /// <summary>
-    /// Interaction logic for Login_Landing_Page.xaml
+    /// Interaction logic for Sign_Up_Page.xaml
     /// </summary>
-    public partial class Login_Landing_Page : Page
+    public partial class Sign_Up_Page : Page
     {
-        public Login_Landing_Page()
+        public Sign_Up_Page()
         {
             InitializeComponent();
         }
-
-        private void SaveToFile(object sender, RoutedEventArgs e)
-        {
-            var userName = UsernameBox.Text;
-            var password = PasswordBox.Text;
-
-            string[] name_pass =
-            {
-                $"{userName}", $"{password}"
-            };
-
-            
-
-        }
-
     }
 }

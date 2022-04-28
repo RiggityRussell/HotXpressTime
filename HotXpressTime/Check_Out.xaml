@@ -11,7 +11,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Center" 
                    Height="72" 
-                   Margin="0,230,0,0" 
+                   Margin="0,372,0,0" 
                    TextWrapping="Wrap" 
                    Text="Payment Info" 
                    VerticalAlignment="Top" 
@@ -21,7 +21,7 @@
                    TextAlignment="Center"
                    
                    Width="480"/>
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="NameOnCard" HorizontalAlignment="Left" 
 
             Height="69" 
                  Margin="10,497,0,0" 
@@ -33,7 +33,7 @@
                  Background="#FFF6F6F6"
                  Foreground="DarkGray"
                  Width="780"/>
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="cardNumber" HorizontalAlignment="Left" 
             Height="69" 
             Margin="10,648,0,0" 
             TextWrapping="Wrap" 
@@ -44,20 +44,21 @@
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Width="780"/>
-        <Button Content="Enter Information" HorizontalAlignment="Center" 
+        <Button x:Name="enterInfoButton" Content="Enter Information" HorizontalAlignment="Center" 
             Margin="0,1022,0,0" VerticalAlignment="Top" 
             Width="540" Height="67" 
+                Cursor="Hand"
             Background="LightCoral"
             Foreground="WhiteSmoke"
             FontFamily="Arial"
-            FontSize="40">
+            FontSize="40" Click="saveInfo">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="EXP" HorizontalAlignment="Left" 
             Height="69" 
             Margin="119,810,0,0" 
             TextWrapping="Wrap" 
@@ -68,7 +69,7 @@
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Width="237"/>
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="CVV" HorizontalAlignment="Left" 
             Height="69" 
             Margin="436,810,0,0" 
             TextWrapping="Wrap" 
