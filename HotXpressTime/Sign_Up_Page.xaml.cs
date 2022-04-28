@@ -67,10 +67,14 @@ namespace HotXpressTime
             }
             else
             {
+                MessageBox.Show("Username or Password missing", "Generic Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                passwordBox.Clear();
+                passwordBox_ReEnter.Clear();
+                UsernameBox.Clear();
                 //Create a textbox to display a generic error for now
                 //"Username or password was missing, or passwords did not match. Try again"
                 //If we have time give a message based on what was actually missing
-             }
+            }
 
             //Some sort of regristaion completed toast?
             //"Profile successfully completed!"
