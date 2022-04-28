@@ -12,10 +12,10 @@
                Opacity=".5"/>
     </Window.Background>
     <ScrollViewer>
-    <Grid Height="1792" Width="828">
-        <Frame x:Name="MainWindowFrame" Margin="0,0,0,10" NavigationUIVisibility="Hidden"/>
-        <StackPanel Orientation="Horizontal" Height="124" VerticalAlignment="Top">
-            <Button x:Name="Menu_Button" Content="Menu" 
+        <Grid Height="1792" Width="828">
+            <Frame x:Name="MainWindowFrame" Margin="0,0,0,10" NavigationUIVisibility="Hidden"/>
+            <StackPanel Orientation="Horizontal" Height="124" VerticalAlignment="Top">
+                <Button x:Name="Menu_Button" Content="Menu" 
                     FontSize="50" 
                     MinWidth="300" 
                     MinHeight="100" 
@@ -24,13 +24,13 @@
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="navToMenu">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="CheckoutButton" Content="Checkout" 
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="CheckoutButton" Content="Checkout" 
                     FontSize="50" 
                     MinWidth="300" 
                     MinHeight="100" 
@@ -39,13 +39,13 @@ Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="Nav_ToCheckout">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="LoginButton" Content="Log In" 
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="LoginButton" Content="Log In" 
                     FontSize="50" 
                     MinWidth="190"
                     MaxWidth="190"
@@ -55,14 +55,14 @@ Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="Nav_ToLogin">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
-        <TextBlock 
+            <TextBlock 
             Name="HotXpressTextBlock"
             HorizontalAlignment="Center" 
             Height="150" 
@@ -75,16 +75,16 @@ Cursor="Hand"
             TextAlignment="Center"
             VerticalAlignment="Top" 
             Width="594"/>
-            <TextBlock HorizontalAlignment="Left" 
-                       Height="104" 
+            <TextBlock x:Name="WaitTimeBlock" HorizontalAlignment="Left" 
+                       Height="83" 
                        Margin="9,134,0,0" 
                        TextWrapping="Wrap" 
                        Text=" Wait Time: 15 Minutes" 
                        VerticalAlignment="Top" 
-                       Width="793"
+                       Width="475"
                        Background="SandyBrown"
                        Foreground="GhostWhite"
-                       FontSize="70"
+                       FontSize="45"
                        Opacity=".9"/>
             <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Top" 
                 Width="396" Height="67" 
@@ -114,6 +114,29 @@ Cursor="Hand"
                     </Style>
                 </Button.Resources>
             </Button>
+            <TextBlock x:Name="QueueBlock" 
+                HorizontalAlignment="Left" 
+                Height="83" 
+                Margin="504,134,0,0" 
+                TextWrapping="Wrap" 
+                Text=" Queue: 0" 
+                VerticalAlignment="Top" 
+                Width="297"
+                Background="SandyBrown"
+                Foreground="GhostWhite"
+                FontSize="45"
+                Opacity=".9"/>
+            <TextBlock x:Name="CurrentLocationBlock" HorizontalAlignment="Left" 
+                Height="83" 
+                Margin="10,236,0,0" 
+                TextWrapping="Wrap" 
+                Text=" Current Location: " 
+                VerticalAlignment="Top" 
+                Width="791"
+                Background="SandyBrown"
+                Foreground="GhostWhite"
+                FontSize="45"
+                Opacity=".9"/>
 
         </Grid>
     </ScrollViewer>
