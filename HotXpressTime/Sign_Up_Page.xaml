@@ -21,33 +21,14 @@
                    TextAlignment="Center"
                    
                    Width="578"/>
-        <TextBox x:Name="PasswordBox" HorizontalAlignment="Center" 
-            Height="69" 
-            Margin="0,682,0,0" 
-            TextWrapping="Wrap" 
-            Text="Password" 
-            VerticalAlignment="Top"
-            FontSize="52"
-            TextAlignment="Center"
-            Background="#FFF6F6F6"
-            Foreground="DarkGray"
-            Width="780"/>
+        <PasswordBox x:Name="passwordBox" MaxLength="16" PasswordChar="#" FontSize="50"
+             PasswordChanged="passwordBox_PasswordChanged" Margin="24,681,24,1041"/>
+
+        <TextBlock x:Name="statusText" Margin="10" HorizontalAlignment="Center" />
         <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" 
             Height="69" 
             Margin="0,553,0,0" 
             TextWrapping="Wrap" 
-            Text="Username" 
-            VerticalAlignment="Top"
-            FontSize="52"
-            TextAlignment="Center"
-            Background="#FFF6F6F6"
-            Foreground="DarkGray"
-            Width="780"/>
-        <TextBox x:Name="PasswordBox_ReEnter" HorizontalAlignment="Center" 
-            Height="69" 
-            Margin="0,808,0,0" 
-            TextWrapping="Wrap" 
-            Text="Re-Enter Password" 
             VerticalAlignment="Top"
             FontSize="52"
             TextAlignment="Center"
@@ -69,5 +50,61 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Height="78" 
+                   Margin="0,499,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Username"
+                   FontSize="50"
+                   
+                   Width="226">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="2"
+      Direction="225"
+      Color="WhiteSmoke"
+     
+     BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Height="78" 
+            Margin="0,622,0,0" 
+            TextWrapping="Wrap" 
+            Text="Password"
+            FontSize="50"
+                   
+            Width="226">
+            <TextBlock.Effect>
+                <DropShadowEffect
+                    ShadowDepth="2"
+                    Direction="225"
+                    Color="WhiteSmoke"
+     
+                    BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Height="78" 
+            Margin="0,751,0,0" 
+            TextWrapping="Wrap" 
+            Text="Re-Enter Password"
+            FontSize="50"
+                   
+            Width="434">
+            <TextBlock.Effect>
+                <DropShadowEffect
+                    ShadowDepth="2"
+                    Direction="225"
+                    Color="WhiteSmoke"
+     
+                    BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <PasswordBox x:Name="passwordBox_ReEnter" MaxLength="16" PasswordChar="#" FontSize="50"
+            PasswordChanged="passwordBox_PasswordChanged" Margin="24,807,24,915"/>
     </Grid>
 </Page>
