@@ -28,30 +28,40 @@ namespace HotXpressTime
         private void BWF_Nav(object sender, RoutedEventArgs e)
         {
             var window = new Window();
+            window.Height = 1792;
+            window.Width = 828;
             window.Show();
         }
 
         private void PPFT_Nav(object sender, RoutedEventArgs e)
         {
             var window = new Window();
+            window.Height = 1792;
+            window.Width = 828;
             window.Show();
         }
 
         private void FS_Nav(object sender, RoutedEventArgs e)
         {
             var window = new Window();
+            window.Height = 1792;
+            window.Width = 828;
             window.Show();
         }
 
         private void FP_Nav(object sender, RoutedEventArgs e)
         {
             var window = new Window();
+            window.Height = 1792;
+            window.Width = 828;
             window.Show();
         }
 
         private void FT_Nav(object sender, RoutedEventArgs e)
         {
             var window = new Window();
+            window.Height = 1792;
+            window.Width = 828;
             window.Show();
         }
     }
