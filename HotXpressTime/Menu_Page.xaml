@@ -22,14 +22,15 @@
                 Click="BWF_Nav">
             <Image x:Name="BWF_Button" Source="images/baconfigs.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
-        <Button  
+        <Button x:Name="PPFT_Button1"  
                 HorizontalAlignment="Left" 
                 FontFamily="Georgia"
                 FontSize="50"
                 Height="208" 
             Cursor="Hand"
                 VerticalAlignment="Center"
-                Width="808">
+                Width="808"
+            Click="PPFT_Nav">
             <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>
         <Button  

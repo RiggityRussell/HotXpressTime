@@ -43,21 +43,6 @@
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Width="780"/>
-        <Button Content="Sign Up" 
-                HorizontalAlignment="Center" 
-                VerticalAlignment="Top" 
-                Width="396" Height="67" 
-                Background="LightSeaGreen"
-                Foreground="WhiteSmoke"
-                FontFamily="Arial"
-                Cursor="Hand"
-                FontSize="40" Margin="0,998,0,0">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </Button.Resources>
-        </Button>
         <TextBox x:Name="PasswordBox_ReEnter" HorizontalAlignment="Center" 
             Height="69" 
             Margin="0,808,0,0" 
@@ -69,5 +54,20 @@
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Width="780"/>
+        <Button x:Name="CreateProfileButton" Content="Create Profile" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Width="396" Height="67" 
+            Background="LightSeaGreen"
+            Foreground="WhiteSmoke"
+            Cursor="Hand"
+            FontFamily="Arial"
+            FontSize="40" Margin="0,998,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Page>

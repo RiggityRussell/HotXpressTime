@@ -26,19 +26,7 @@ namespace HotXpressTime
             InitializeComponent();
         }
 
-        private void SaveToFile(object sender, RoutedEventArgs e)
-        {
-            var userName = UsernameBox.Text;
-            var password = PasswordBox.Text;
-
-            string[] name_pass =
-            {
-                $"{userName}", $"{password}"
-            };
-
-            
-
-        }
+       
 
     }
 }
