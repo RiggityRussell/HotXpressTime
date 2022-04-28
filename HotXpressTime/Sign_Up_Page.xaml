@@ -62,7 +62,7 @@
             Foreground="WhiteSmoke"
             Cursor="Hand"
             FontFamily="Arial"
-            FontSize="40" Margin="0,998,0,0">
+            FontSize="40" Margin="0,998,0,0" Click="CreateProfileButton_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
