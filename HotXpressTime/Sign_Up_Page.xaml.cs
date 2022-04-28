@@ -22,6 +22,7 @@ namespace HotXpressTime
     {
         public Sign_Up_Page()
         {
+            //test
             InitializeComponent();
         }
 
