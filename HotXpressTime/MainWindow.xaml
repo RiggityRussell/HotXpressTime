@@ -13,7 +13,7 @@
     </Window.Background>
     <ScrollViewer>
     <Grid Height="1792" Width="828">
-        <Frame x:Name="MainWindowFrame" Margin="0,0,0,10"/>
+        <Frame x:Name="MainWindowFrame" Margin="0,0,0,10" NavigationUIVisibility="Hidden"/>
         <StackPanel Orientation="Horizontal" Height="124" VerticalAlignment="Top">
             <Button x:Name="Menu_Button" Content="Menu" 
                     FontSize="50" 
@@ -61,7 +61,7 @@ Cursor="Hand"
                     </Style>
                 </Button.Resources>
             </Button>
-        </StackPanel>
+            </StackPanel>
         <TextBlock 
             Name="HotXpressTextBlock"
             HorizontalAlignment="Center" 

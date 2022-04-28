@@ -9,7 +9,7 @@
       Title="Menu_Page">
 
     <Grid>
-        <Button  
+        <Button x:Name="BaconWrappedFigs"  
                 HorizontalAlignment="Left" 
                 FontFamily="Georgia"
                 FontSize="50"
@@ -18,6 +18,7 @@
             Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808"
+                
                 Click="BWF_Nav">
             <Image x:Name="BWF_Button" Source="images/baconfigs.PNG" Width="808" Height="208" Stretch="Fill"/>
         </Button>

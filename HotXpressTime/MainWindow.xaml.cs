@@ -30,7 +30,6 @@ namespace HotXpressTime
         private void navToMenu(object sender, RoutedEventArgs e)
         {
             MainWindowFrame.NavigationService.Navigate(new Uri("Menu_Page.xaml", UriKind.Relative));
-            Menu_Button.Visibility = Visibility.Hidden;
             Menu_Button.Visibility = Visibility.Collapsed;
             HotXpressTextBlock.Visibility = Visibility.Collapsed;
             CheckoutButton.Visibility = Visibility.Visible;
@@ -66,5 +65,7 @@ namespace HotXpressTime
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
         }
+
+      
     }
 }

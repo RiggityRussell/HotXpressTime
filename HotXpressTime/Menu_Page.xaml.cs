@@ -27,7 +27,7 @@ namespace HotXpressTime
 
         private void BWF_Nav(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }
