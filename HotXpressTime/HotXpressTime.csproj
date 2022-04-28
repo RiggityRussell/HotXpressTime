@@ -14,6 +14,7 @@
     <None Remove="images\smoothie.PNG" />
     <None Remove="images\tacos.PNG" />
     <None Remove="images\tart.PNG" />
+    <None Remove="Users\Users.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
     <Resource Include="images\smoothie.PNG" />
     <Resource Include="images\tacos.PNG" />
     <Resource Include="images\tart.PNG" />
+    <Resource Include="Users\Users.txt" />
   </ItemGroup>
 
 </Project>
