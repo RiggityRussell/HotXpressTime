@@ -107,6 +107,7 @@ namespace HotXpressTime
             MainWindowFrame.NavigationService.Navigate(new Uri("Sign_Up_Page.xaml", UriKind.Relative));
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
+            Menu_Button.Visibility = Visibility.Visible;
         }
 
         private void Change_Day(object sender, RoutedEventArgs e)
@@ -115,8 +116,6 @@ namespace HotXpressTime
 
             DateTime dateValue = DateTime.Today;
             int newdatevalue = ((int)dateValue.DayOfWeek);
-            
-
 
             if (Current_Location_Button.Content.ToString() == "Current Location:")
             {
@@ -159,15 +158,56 @@ namespace HotXpressTime
                 }
                 else
                 {
-                   newdatevalue = 1;
+                    location = "E Front st and Wellington";
+                    UpdateLocationBlock.Text = location.ToString();
                 }
 
             }
-            else
+            else if (Current_Location_Button.Content.ToString() == "Tomorrow Location:")
             {
+
                 Current_Location_Button.Content = "Current Location:";
+                if (newdatevalue == 1)
+                {
+                    location = "E Front st and Wellington";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 2)
+                {
+                    location = "Station st and Railroad Ave";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 3)
+                {
+                    location = "E State St and S Union St";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 4)
+                {
+                    location = "West Beach Parking Lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 5)
+                {
+                    location = "Dennos Museum Parking lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 6)
+                {
+                    location = "Right Brain Brewery lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 7)
+                {
+                    location = "Closed on Sundays";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else
+                {
+                    location = "E Front st and Wellington";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
             }
         }
-        
     }
 }
