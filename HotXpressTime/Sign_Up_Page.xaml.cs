@@ -72,7 +72,7 @@ namespace HotXpressTime
                 //If we have time give a message based on what was actually missing
              }
 
-            //Some sort of regristaion completed toast?
+            //Some sort of regristation completed toast?
             //"Profile successfully completed!"
 
 

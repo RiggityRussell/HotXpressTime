@@ -10,17 +10,18 @@ namespace HotXpressTime
     {
         internal static bool IsCredentialsValid(string username, string password, string reEnterPass)
         {
+            bool isValid = true;
 
-            if((username == null) || (password == null))
+            if(string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                return false;
+                isValid = false;
             }
-            if(reEnterPass == null || password != reEnterPass)
+            if(string.IsNullOrEmpty(password)|| password != reEnterPass)
             {
-                return false;
+                isValid = false;
             }
 
-            return true;
+            return isValid;
             
         }
     }
