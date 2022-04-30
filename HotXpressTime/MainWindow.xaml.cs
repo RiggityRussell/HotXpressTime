@@ -31,6 +31,11 @@ namespace HotXpressTime
             Fig_Smoothie.Visibility = Visibility.Collapsed;
             Fig_Panacotta.Visibility = Visibility.Collapsed;
             FT_Button1.Visibility= Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility= Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility= Visibility.Collapsed;
+            Fig_Smoothie1.Visibility= Visibility.Collapsed;
+            Fig_Panacotta1.Visibility= Visibility.Collapsed;
+            Fig_Tart.Visibility= Visibility.Collapsed;
 
             string location;
 
@@ -92,6 +97,11 @@ namespace HotXpressTime
             Fig_Smoothie.Visibility = Visibility.Visible;
             Fig_Panacotta.Visibility = Visibility.Visible;
             FT_Button1.Visibility = Visibility.Visible;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Visible;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Visible;
+            Fig_Smoothie1.Visibility = Visibility.Visible;
+            Fig_Panacotta1.Visibility = Visibility.Visible;
+            Fig_Tart.Visibility = Visibility.Visible;
 
         }
 
@@ -111,6 +121,11 @@ namespace HotXpressTime
             Fig_Smoothie.Visibility = Visibility.Collapsed;
             Fig_Panacotta.Visibility = Visibility.Collapsed;
             FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
         }
 
         private void Nav_ToLogin(object sender, RoutedEventArgs e)
@@ -127,6 +142,11 @@ namespace HotXpressTime
             Fig_Smoothie.Visibility = Visibility.Collapsed;
             Fig_Panacotta.Visibility = Visibility.Collapsed;
             FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
 
         }
 
@@ -142,6 +162,11 @@ namespace HotXpressTime
             Fig_Smoothie.Visibility = Visibility.Collapsed;
             Fig_Panacotta.Visibility = Visibility.Collapsed;
             FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
         }
 
         private void Change_Day(object sender, RoutedEventArgs e)
