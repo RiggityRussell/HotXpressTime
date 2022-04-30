@@ -21,27 +21,53 @@
                    TextAlignment="Center"
                    
                    Width="578"/>
-        <TextBox x:Name="PasswordBox" HorizontalAlignment="Center" 
-            Height="69" 
-            Margin="0,682,0,0" 
-            TextWrapping="Wrap" 
-            Text="Password" 
-            VerticalAlignment="Top"
-            FontSize="52"
-            TextAlignment="Center"
-            Background="#FFF6F6F6"
-            Foreground="DarkGray"
-            Width="780"/>
         <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" 
             Height="69" 
             Margin="0,553,0,0" 
             TextWrapping="Wrap" 
-            Text="Username" 
             VerticalAlignment="Top"
             FontSize="52"
             TextAlignment="Center"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Width="780"/>
+        <PasswordBox x:Name="passwordBox" MaxLength="16" PasswordChar="#" FontSize="50"
+             Margin="24,703,24,1019"/>
+        <TextBlock HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Height="78" 
+            Margin="0,649,0,0" 
+            TextWrapping="Wrap" 
+            Text="Password"
+            FontSize="50"
+                   
+            Width="226">
+            <TextBlock.Effect>
+                <DropShadowEffect
+                    ShadowDepth="2"
+                    Direction="225"
+                    Color="WhiteSmoke"
+     
+                    BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Height="78" 
+            Margin="0,499,0,0" 
+            TextWrapping="Wrap" 
+            Text="Username"
+            FontSize="50"
+                   
+            Width="226">
+            <TextBlock.Effect>
+                <DropShadowEffect
+                    ShadowDepth="2"
+                    Direction="225"
+                    Color="WhiteSmoke"
+     
+                    BlurRadius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
     </Grid>
 </Page>
