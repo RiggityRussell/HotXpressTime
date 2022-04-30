@@ -23,7 +23,7 @@ namespace HotXpressTime
         public MainWindow()
         {
             InitializeComponent();
-            LogInButton.Visibility = Visibility.Collapsed;
+            //LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
             string location;
 
@@ -77,7 +77,7 @@ namespace HotXpressTime
             HotXpressTextBlock.Visibility = Visibility.Collapsed;
             CheckoutButton.Visibility = Visibility.Visible;
             LoginButton.Visibility = Visibility.Visible;
-            LogInButton.Visibility = Visibility.Collapsed;
+            //LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
         }
 
@@ -88,7 +88,7 @@ namespace HotXpressTime
             Menu_Button.Visibility = Visibility.Visible;
             LoginButton.Visibility = Visibility.Visible;
             HotXpressTextBlock.Visibility = Visibility.Collapsed;
-            LogInButton.Visibility = Visibility.Collapsed;
+            //LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
         }
 
@@ -97,7 +97,7 @@ namespace HotXpressTime
             MainWindowFrame.NavigationService.Navigate(new Uri("Login_Landing_Page.xaml", UriKind.Relative));
             LoginButton.Visibility = Visibility.Collapsed;
             HotXpressTextBlock.Visibility = Visibility.Collapsed;
-            LogInButton.Visibility = Visibility.Visible;
+            //LogInButton.Visibility = Visibility.Visible;
             SignUpButton.Visibility = Visibility.Visible;
 
         }
@@ -105,7 +105,7 @@ namespace HotXpressTime
         private void NavTo_Sign_Up_Page(object sender, RoutedEventArgs e)
         {
             MainWindowFrame.NavigationService.Navigate(new Uri("Sign_Up_Page.xaml", UriKind.Relative));
-            LogInButton.Visibility = Visibility.Collapsed;
+            //LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
         }
 

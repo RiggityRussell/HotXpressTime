@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1792" Width="828">
+        Title="MainWindow" Height="1200" Width="828">
     <Window.Background>
         <ImageBrush 
                ImageSource="images/figDisplay1.PNG"
@@ -35,7 +35,7 @@
                     MinWidth="300" 
                     MinHeight="100" 
                     Margin="0,5,5,5"
-Cursor="Hand"
+                    Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
                     FontFamily="Arial" Click="Nav_ToCheckout">
@@ -86,19 +86,7 @@ Cursor="Hand"
                        Foreground="GhostWhite"
                        FontSize="45"
                        Opacity=".9"/>
-            <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                Width="396" Height="67" 
-                Background="LightCoral"
-                Foreground="WhiteSmoke"
-                Cursor="Hand"
-                FontFamily="Arial"
-                FontSize="40" Margin="0,896,0,0">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
+
             <Button x:Name="SignUpButton" Content="Sign Up" 
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Top" 
