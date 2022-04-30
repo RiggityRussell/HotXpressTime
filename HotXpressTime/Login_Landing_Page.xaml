@@ -69,5 +69,18 @@
                     BlurRadius="0"/>
             </TextBlock.Effect>
         </TextBlock>
+        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                Width="396" Height="67" 
+                Background="LightCoral"
+                Foreground="WhiteSmoke"
+                Cursor="Hand"
+                FontFamily="Arial"
+                FontSize="40" Margin="0,896,0,0" Click="LogInButton_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Page>

@@ -26,7 +26,30 @@ namespace HotXpressTime
             InitializeComponent();
         }
 
-       
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameBox.Text.ToString();
+            string password = passwordBox.Password.ToString();
+            bool valid = false;
 
+            if(username != "" && password != "")
+            {
+                valid = Utilities.GetValidUserInfo(username, password);
+
+                if (valid)
+                {
+                    MessageBox.Show($"Welcome back,{username}!","Welcome Message");
+                }
+                else
+                {
+                    MessageBox.Show($"Could not find that user, Please try againg.", "No User Found");
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Please enter a valid username and password!", "Invalid Credentials");
+
+            }
+        }
     }
 }
