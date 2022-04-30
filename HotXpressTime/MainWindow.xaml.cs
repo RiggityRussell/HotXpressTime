@@ -25,6 +25,13 @@ namespace HotXpressTime
             InitializeComponent();
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility= Visibility.Collapsed;
+
             string location;
 
             DateTime dateValue = DateTime.Today;
@@ -79,10 +86,18 @@ namespace HotXpressTime
             LoginButton.Visibility = Visibility.Visible;
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
+            /*Show the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Visible;
+            PPFT_Button1.Visibility = Visibility.Visible;
+            Fig_Smoothie.Visibility = Visibility.Visible;
+            Fig_Panacotta.Visibility = Visibility.Visible;
+            FT_Button1.Visibility = Visibility.Visible;
+
         }
 
         private void Nav_ToCheckout(object sender, RoutedEventArgs e)
         {
+
             MainWindowFrame.NavigationService.Navigate(new Uri("Check_Out.xaml", UriKind.Relative));
             CheckoutButton.Visibility = Visibility.Collapsed;
             Menu_Button.Visibility = Visibility.Visible;
@@ -90,15 +105,28 @@ namespace HotXpressTime
             HotXpressTextBlock.Visibility = Visibility.Collapsed;
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
         }
 
         private void Nav_ToLogin(object sender, RoutedEventArgs e)
         {
             MainWindowFrame.NavigationService.Navigate(new Uri("Login_Landing_Page.xaml", UriKind.Relative));
+            
             LoginButton.Visibility = Visibility.Collapsed;
             HotXpressTextBlock.Visibility = Visibility.Collapsed;
             LogInButton.Visibility = Visibility.Visible;
             SignUpButton.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
 
         }
 
@@ -108,6 +136,12 @@ namespace HotXpressTime
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
             Menu_Button.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
         }
 
         private void Change_Day(object sender, RoutedEventArgs e)
