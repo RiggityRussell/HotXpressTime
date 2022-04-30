@@ -77,7 +77,7 @@
             FontWeight="Bold"
             TextAlignment="Center"
             Width="480">
-            <TextBlock.Effect>
+            <TextBlock.Effect> 
                 <DropShadowEffect
       ShadowDepth="6"
       Direction="225"
