@@ -138,15 +138,16 @@ Cursor="Hand"
                 FontSize="45"
                 Opacity=".9"/>
             <TextBlock x:Name="UpdateLocationBlock" HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="375,236,0,0" 
+                Height="72" 
+                Margin="375,247,0,0" 
                 TextWrapping="Wrap" 
                 Text=" " 
+                TextAlignment="Center"
                 VerticalAlignment="Top" 
                 Width="427"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
-                FontSize="45"
+                FontSize="30"
                 Opacity=".9"/>
             <TextBlock x:Name="UpdateQueueBlock" 
                 HorizontalAlignment="Left" 
@@ -170,6 +171,18 @@ Cursor="Hand"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
                 FontSize="45"
+                Opacity=".9"/>
+            <TextBlock x:Name="UpdateLocationBlock_Copy" HorizontalAlignment="Left" 
+                Height="11" 
+                Margin="375,236,0,0" 
+                
+                Text=" " 
+                
+                VerticalAlignment="Top" 
+                Width="427"
+                Background="SandyBrown"
+                
+                FontSize="30"
                 Opacity=".9"/>
 
         </Grid>

@@ -25,6 +25,49 @@ namespace HotXpressTime
             InitializeComponent();
             LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
+            string location;
+
+            DateTime dateValue = DateTime.Today;
+            int newdatevalue = ((int)dateValue.DayOfWeek);
+            if (newdatevalue == 1)
+            {
+                location = "E Front st and Wellington";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+            else if (newdatevalue == 2)
+            {
+                location = "Station st and Railroad Ave";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+            else if (newdatevalue == 3)
+            {
+                location = "E State St and S Union St";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+            else if (newdatevalue == 4)
+            {
+                location = "West Beach Parking Lot";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+            else if (newdatevalue == 5)
+            {
+                location = "Dennos Museum Parking lot";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+            else if (newdatevalue == 6)
+            {
+                location = "Right Brain Brewery lot";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+            else
+            {
+                location = "Closed on Sundays";
+                UpdateLocationBlock.Text = location.ToString();
+            }
+
+
+            // Console.WriteLine((int)dateValue.DayOfWeek);
+
         }
 
         private void navToMenu(object sender, RoutedEventArgs e)
