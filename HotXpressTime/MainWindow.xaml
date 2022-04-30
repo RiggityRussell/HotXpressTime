@@ -126,20 +126,9 @@ Cursor="Hand"
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9"/>
-            <TextBlock x:Name="CurrentLocationBlock" HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="10,236,0,0" 
-                TextWrapping="Wrap" 
-                Text=" Current Location: " 
-                VerticalAlignment="Top" 
-                Width="365"
-                Background="SandyBrown"
-                Foreground="GhostWhite"
-                FontSize="45"
-                Opacity=".9"/>
             <TextBlock x:Name="UpdateLocationBlock" HorizontalAlignment="Left" 
-                Height="72" 
-                Margin="375,247,0,0" 
+                Height="71" 
+                Margin="375,241,0,0" 
                 TextWrapping="Wrap" 
                 Text=" " 
                 TextAlignment="Center"
@@ -172,18 +161,17 @@ Cursor="Hand"
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9"/>
-            <TextBlock x:Name="UpdateLocationBlock_Copy" HorizontalAlignment="Left" 
-                Height="11" 
-                Margin="375,236,0,0" 
-                
-                Text=" " 
-                
-                VerticalAlignment="Top" 
-                Width="427"
-                Background="SandyBrown"
-                
-                FontSize="30"
-                Opacity=".9"/>
+            <Button x:Name="Current_Location_Button" Content="Current Location:" 
+                    HorizontalAlignment="Left" Height="83" 
+                    Margin="10,236,0,0" 
+                    Background="SandyBrown"
+                    Foreground="WhiteSmoke"
+                    Opacity=".9"
+                    Cursor="Hand"
+                    FontSize="40"
+                    FontFamily="Arial"
+                    VerticalAlignment="Top" 
+                    Width="365" Click="Change_Day"/>
 
         </Grid>
     </ScrollViewer>

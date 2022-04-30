@@ -109,6 +109,65 @@ namespace HotXpressTime
             SignUpButton.Visibility = Visibility.Collapsed;
         }
 
-      
+        private void Change_Day(object sender, RoutedEventArgs e)
+        {
+            string location;
+
+            DateTime dateValue = DateTime.Today;
+            int newdatevalue = ((int)dateValue.DayOfWeek);
+            
+
+
+            if (Current_Location_Button.Content.ToString() == "Current Location:")
+            {
+                Current_Location_Button.Content = "Tomorrow Location:";
+                newdatevalue += 1;
+                if (newdatevalue == 1)
+                {
+                    location = "E Front st and Wellington";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 2)
+                {
+                    location = "Station st and Railroad Ave";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 3)
+                {
+                    location = "E State St and S Union St";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 4)
+                {
+                    location = "West Beach Parking Lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 5)
+                {
+                    location = "Dennos Museum Parking lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 6)
+                {
+                    location = "Right Brain Brewery lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 7)
+                {
+                    location = "Closed on Sundays";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else
+                {
+                   newdatevalue = 1;
+                }
+
+            }
+            else
+            {
+                Current_Location_Button.Content = "Current Location:";
+            }
+        }
+        
     }
 }
