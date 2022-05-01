@@ -86,20 +86,26 @@ namespace HotXpressTime
             foreach (var item in fileContents)
             {
                 Orders order = new Orders();
-                string itemDescripton;
+                string itemDescripton = "";
 
                 fileArray = item.Split(',');
                 order.Customer = fileArray[0];
                 order.Total = Convert.ToDouble(fileArray[1]);
 
-                //if(fileContents.Length >= 3)
-                //{
-                //    itemDescripton = fileArray[]
-                //}
-                //else
-                //{
+                if(fileContents.Length >= 2)
+                {
+                    
+                    foreach (string line in fileArray)
+                    {
+                        itemDescripton += line + ",";
+                    }
+                   order.MenuItem = itemDescripton;
+                       
+                }
+                else
+                {
                 order.MenuItem = fileArray[2];
-                //}
+                }
 
                 itemList.Add(order);
             }
