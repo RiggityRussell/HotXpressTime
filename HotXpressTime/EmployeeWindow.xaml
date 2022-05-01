@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="EmployeeWindow" Height="1792" Width="828">
+        Title="EmployeeWindow" Height="1792" Width="828" Background="DarkGray">
     <Grid Height="1212" Width="771">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="530*"/>
