@@ -79,7 +79,7 @@
             Width="480">
             <TextBlock.Effect>
                 <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
       Color="WhiteSmoke"
      
@@ -99,7 +99,7 @@
             Width="480">
             <TextBlock.Effect>
                 <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
       Color="WhiteSmoke"
      
@@ -119,7 +119,7 @@
             Width="128">
             <TextBlock.Effect>
                 <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
       Color="WhiteSmoke"
      
@@ -139,7 +139,7 @@
             Width="140">
             <TextBlock.Effect>
                 <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
       Color="WhiteSmoke"
      
