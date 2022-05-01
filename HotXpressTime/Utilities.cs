@@ -50,6 +50,40 @@ namespace HotXpressTime
 
             return isValid;
         }
+
+        public static void getMenuItem(string selectedItem)
+        {
+            string file = $"Data/menuItems.txt";
+            string[] menuItem;
+            menuItem = File.ReadAllLines(file);
+            List<menuItems> listMenuItems = new List<menuItems>();
+            foreach (string line in menuItem)
+            {
+                menuItems menuItems = new menuItems();
+                menuItem = line.Split(',');
+                menuItems.items = menuItem[0];
+                menuItems.price = Convert.ToDouble(menuItem[1]);
+                menuItems.quantity = 1;
+                listMenuItems.Add(menuItems);
+            }
+
+            menuItems items = listMenuItems.Find(x => x.items == selectedItem);
+
+            if (items != null)
+            {
+                Utilities.updateCart(items);
+            }
+        }
+            internal static void updateCart(menuItems items)
+        {
+            using (StreamWriter stream = new StreamWriter("Data/cart.txt", false))
+            {
+                string info = $"{items.items},{items.price},1,";
+                stream.Write(info);
+                stream.Close();
+            }
+        }
+
         private static List<(string userID, string userName, string password)> GetUserInfoData()
         {
             string file = $"Users/Users.txt";

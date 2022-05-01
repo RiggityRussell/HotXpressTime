@@ -59,6 +59,6 @@
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9"/>
-        <DataGrid x:Name="dataGrid" Grid.ColumnSpan="2" Margin="104,272,141,543"/>
+        <Grid x:Name="dataGrid" Grid.ColumnSpan="2" Margin="63,352,182,463"/>
     </Grid>
 </Window>
