@@ -24,5 +24,9 @@ namespace HotXpressTime.MenuItems
         {
             InitializeComponent();
         }
+        private void BWF_Cart(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You've add 1 order of Bacon Wrapped Figs");
+        }
     }
 }

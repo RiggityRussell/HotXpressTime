@@ -27,7 +27,7 @@
                 VerticalAlignment="Top"
                 Width="114"
                 Click="BWF_Cart"/>
-        <Image x:Name="BWFCart_Button" Source="images/cartButton.jpeg" Stretch="Fill" Margin="680,903,0,0" Grid.Row="1"/>
+        <Image x:Name="BWFCart_Button" Source="images/cartButton.png" Stretch="Fill" Margin="680,903,0,0" Grid.Row="1"/>
 
     </Grid>
 </Page>
