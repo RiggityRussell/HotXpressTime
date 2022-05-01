@@ -187,7 +187,7 @@
             </Button>
             <Button x:Name="Fig_Smoothie"  
                 HorizontalAlignment="Left" 
-                FontFamily="Georgia"
+                FontFamily="Georgia" 
                 FontSize="50"
                 Height="208" 
                 Margin="0,1068,0,0" 
@@ -225,6 +225,7 @@
             <TextBlock x:Name="Bacon_Wrapped_Figs" Text="Bacon Wrapped Figs"
                    HorizontalAlignment="Center" 
                    Height="112" Margin="0,580,0,0" 
+                   Foreground="BlanchedAlmond"
                    IsHitTestVisible="False"
                    TextWrapping="Wrap"
                    Cursor="Hand"
@@ -232,9 +233,9 @@
                    FontSize="65">
                 <TextBlock.Effect>
                     <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
-      Color="BlanchedAlmond"
+      Color="black"
      
      BlurRadius="0"/>
                 </TextBlock.Effect>
@@ -242,15 +243,16 @@
             <TextBlock x:Name="Pulled_Pork_Fig_Tacos" Text="Pulled Pork Fig Tacos"
                    HorizontalAlignment="Center" 
                    Height="112" Margin="0,826,0,0" 
+                   Foreground="BlanchedAlmond"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
                    VerticalAlignment="Top" Width="642"
                    FontSize="65">
                 <TextBlock.Effect>
                     <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
-      Color="WhiteSmoke"
+      Color="black"
      
      BlurRadius="0"/>
                 </TextBlock.Effect>
@@ -258,15 +260,16 @@
             <TextBlock x:Name="Fig_Smoothie1" Text="Fig Smoothie"
                    HorizontalAlignment="Center" 
                    Height="112" Margin="0,1116,0,0" 
+                       Foreground="BlanchedAlmond"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
                    VerticalAlignment="Top" Width="386"
                    FontSize="65">
                 <TextBlock.Effect>
                     <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
-      Color="BlanchedAlmond"
+      Color="black"
      
      BlurRadius="0"/>
                 </TextBlock.Effect>
@@ -274,31 +277,33 @@
             <TextBlock x:Name="Fig_Panacotta1" Text="Fig Panacotta"
                    HorizontalAlignment="Left" 
                    Height="112" Margin="211,1376,0,0" 
+                   Foreground="BlanchedAlmond"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
                    VerticalAlignment="Top" Width="386"
                    FontSize="65">
                 <TextBlock.Effect>
                     <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
-      Color="BlanchedAlmond"
+      Color="black"
      
      BlurRadius="0"/>
                 </TextBlock.Effect>
             </TextBlock>
             <TextBlock x:Name="Fig_Tart" Text="Fig Tart"
                    HorizontalAlignment="Left" 
-                   Height="112" Margin="289,1624,0,0" 
+                   Height="112" Margin="289,1624,0,0"
+                   Foreground="AntiqueWhite"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
                    VerticalAlignment="Top" Width="230"
                    FontSize="65">
                 <TextBlock.Effect>
                     <DropShadowEffect
-      ShadowDepth="6"
+      ShadowDepth="3"
       Direction="225"
-      Color="WhiteSmoke"
+      Color="black"
      
      BlurRadius="0"/>
                 </TextBlock.Effect>
