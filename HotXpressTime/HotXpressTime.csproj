@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="images\baconfigs.PNG" />
+    <None Remove="images\cartButton.png" />
     <None Remove="images\cotta.PNG" />
     <None Remove="images\figDisplay1.PNG" />
     <None Remove="images\smoothie.PNG" />
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <Resource Include="images\baconfigs.PNG" />
+    <Resource Include="images\cartButton.png" />
     <Resource Include="images\cotta.PNG" />
     <Resource Include="images\figDisplay1.PNG" />
     <Resource Include="images\smoothie.PNG" />
