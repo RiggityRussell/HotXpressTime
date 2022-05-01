@@ -6,16 +6,26 @@
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
         Title="EmployeeWindow" Height="1792" Width="828" Background="DarkGray">
-    <Grid Height="1212" Width="771">
+    <Grid Width="771" Margin="28,210,28,282">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="530*"/>
             <ColumnDefinition Width="241*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="MainWindowFrame" Margin="0,0,0,10" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
-        <StackPanel Orientation="Horizontal" Height="124" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Frame x:Name="MainWindowFrame" Width="771" Background="Beige" Margin="0,0,0,10" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
+        <ListView x:Name="Orders" Margin="127,190,114,136" Grid.ColumnSpan="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Customer}" FontWeight="Bold" FontSize="30px"/>
+                        <TextBlock Text="{Binding Total}" FontWeight="Bold" FontSize="30px" />
+                        <TextBlock Text="{Binding MenuItem}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <TextBlock x:Name="WaitTimeBlock" HorizontalAlignment="Left" 
                        Height="115" 
-                       Margin="9,134,0,0" 
+                       Margin="10,10,0,0" 
                        TextWrapping="Wrap" 
                        Text=" Wait Time: " 
                        VerticalAlignment="Top" 
@@ -27,7 +37,7 @@
         <TextBlock x:Name="QueueBlock" 
                 HorizontalAlignment="Left" 
                 Height="83" 
-                Margin="504,134,0,0" 
+                Margin="461,26,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Queue:" 
                 VerticalAlignment="Top" 
@@ -39,7 +49,7 @@
         <TextBlock x:Name="UpdateQueueBlock" 
                 HorizontalAlignment="Left" 
                 Height="83" 
-                Margin="144,134,0,0" 
+                Margin="106,26,0,0" 
                 TextWrapping="Wrap" 
                 Text=" " 
                 VerticalAlignment="Top" 
@@ -50,15 +60,14 @@
                 Opacity=".9" Grid.Column="1"/>
         <TextBlock x:Name="UpdateWaitTimeBlock" HorizontalAlignment="Left" 
                 Height="115" 
-                Margin="248,134,0,0" 
+                Margin="254,10,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Minutes" 
                 VerticalAlignment="Top" 
-                Width="238"
+                Width="202"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9"/>
-        <Grid x:Name="dataGrid" Grid.ColumnSpan="2" Margin="63,352,182,463"/>
     </Grid>
 </Window>

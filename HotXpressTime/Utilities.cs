@@ -32,6 +32,8 @@ namespace HotXpressTime
             
         }
 
+
+
         internal static bool GetValidUserInfo(string userName, string password)
         {
             List<(string userID, string userName, string password)> userCredentials = new List<(string userID, string userName, string password)>();
@@ -45,6 +47,7 @@ namespace HotXpressTime
                 {
                     isValid = true;
                     break;
+
                 }
             }
 
@@ -71,10 +74,39 @@ namespace HotXpressTime
 
             if (items != null)
             {
-                Utilities.updateCart(items);
+                updateCart(items);
             }
         }
-            internal static void updateCart(menuItems items)
+        internal static List<Orders> GetCustomerOrders()
+        {
+            string file = $"Data/orders.txt";
+            string[] fileContents = File.ReadAllLines(file);
+            List<Orders> itemList = new List<Orders>();
+            string[] fileArray;
+            foreach (var item in fileContents)
+            {
+                Orders order = new Orders();
+                string itemDescripton;
+
+                fileArray = item.Split(',');
+                order.Customer = fileArray[0];
+                order.Total = Convert.ToDouble(fileArray[1]);
+
+                //if(fileContents.Length >= 3)
+                //{
+                //    itemDescripton = fileArray[]
+                //}
+                //else
+                //{
+                order.MenuItem = fileArray[2];
+                //}
+
+                itemList.Add(order);
+            }
+            return itemList;
+        }    
+
+        internal static void updateCart(menuItems items)
         {
             using (StreamWriter stream = new StreamWriter("Data/cart.txt", false))
             {
@@ -109,5 +141,6 @@ namespace HotXpressTime
 
             return registeredUsers;
         }
+
     }
 }
