@@ -21,6 +21,7 @@
                Margin="6,0,4,601" 
                Grid.Row="1" />
         <TextBox HorizontalAlignment="Center" 
+                 IsHitTestVisible="False"
                  Height="219" 
                  Margin="0,480,0,0" 
                  TextWrapping="Wrap" 
@@ -32,6 +33,7 @@
                  FontWeight="Bold"/>
 
         <TextBox HorizontalAlignment="Center" 
+                 IsHitTestVisible="False"
                  Height="69" 
                  Margin="0,587,0,0" 
                  TextWrapping="Wrap" 
@@ -44,6 +46,7 @@
 
         <TextBox Height="244" 
                  Margin="146,661,128,0" 
+                 IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Text="Pulled pork marinated for 38 hours with fig juice, then slow cooked to perfection. Comes with creamy dill sour cream, quick pickled onions, roasted fig toppers, cilantro and lime wedges." 
@@ -55,6 +58,7 @@
                  Margin="10,903,682,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
+                 IsHitTestVisible="False"
                  Text="PRICE&#xD;&#xA;$15" 
                  FontSize="40" 
                  FontWeight="Bold" 

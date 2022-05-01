@@ -27,8 +27,17 @@ namespace HotXpressTime
 
         private void GetCustomerOrders()
         {
-            TextBox textBox = new TextBox();
-            /*dataGrid.Children*/
+            List<Orders> orders = Utilities.GetCustomerOrders();
+            if(orders != null)
+            {
+                SetItemListView(orders);
+            }
+        }
+
+        private void SetItemListView(List<Orders> orders)
+        {
+            Orders.ItemsSource = orders;
+
         }
     }
 }
