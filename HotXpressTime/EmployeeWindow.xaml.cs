@@ -27,8 +27,11 @@ namespace HotXpressTime
 
         private void GetCustomerOrders()
         {
+            Window.NameProperty.ToString();
             TextBox textBox = new TextBox();
             dataGrid.Children
+                //Hello does this work
+                
         }
     }
 }
