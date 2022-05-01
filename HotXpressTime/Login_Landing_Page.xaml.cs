@@ -44,12 +44,18 @@ namespace HotXpressTime
                 {
                     MessageBox.Show($"Could not find that user, Please try againg.", "No User Found");
                 }
+                if (username == "Jason")
+                {
+                    //check if its the employee logging in
+
+                }
             }
             else
             {
                 MessageBox.Show($"Please enter a valid username and password!", "Invalid Credentials");
 
             }
+            
         }
     }
 }
