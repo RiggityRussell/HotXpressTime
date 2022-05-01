@@ -28,7 +28,6 @@ namespace HotXpressTime.MenuItems
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             MessageBoxResult result= MessageBox.Show("Would you like to add Bacon Wrapped Figs?", "Bacon FIGS", MessageBoxButton.YesNo);
             switch(result)
             {
@@ -42,10 +41,6 @@ namespace HotXpressTime.MenuItems
                     MessageBox.Show("More for me then!");
                     break;
             }
-
-
-
-           
         }
     }
 }

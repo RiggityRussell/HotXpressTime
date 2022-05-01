@@ -41,9 +41,6 @@ namespace HotXpressTime.MenuItems
                     break;
             }
 
-
-
-
         }
     }
 }
