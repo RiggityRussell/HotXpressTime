@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace HotXpressTime
 {
     /// <summary>
@@ -75,8 +76,9 @@ namespace HotXpressTime
             {
                 Update.CreateNewUser(username, password);
                 //Some sort of regristation completed toast?
-                MessageBox.Show($"Welcome {username}!", "Welcome", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show($"Welcome {username}!", "Welcome", MessageBoxButton.OK, MessageBoxImage.Warning  );
                 //"Profile successfully completed!"
+                
             }
 
             //Nav back to home menu?

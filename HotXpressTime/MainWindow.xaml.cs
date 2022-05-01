@@ -334,7 +334,7 @@ namespace HotXpressTime
 
         private void FigPannacotta(object sender, RoutedEventArgs e)
         {
-            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/FigSmoothie.xaml", UriKind.Relative));
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/PannaCotta.xaml", UriKind.Relative));
             /*Show Menu, Log in, Checkout Button*/
             Menu_Button.Visibility = Visibility.Visible;
             LoginButton.Visibility = Visibility.Visible;
@@ -354,7 +354,7 @@ namespace HotXpressTime
 
         private void NavToFigTart(object sender, RoutedEventArgs e)
         {
-            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/FigSmoothie.xaml", UriKind.Relative));
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/FigTart.xaml", UriKind.Relative));
             /*Show Menu, Log in, Checkout Button*/
             Menu_Button.Visibility = Visibility.Visible;
             LoginButton.Visibility = Visibility.Visible;
