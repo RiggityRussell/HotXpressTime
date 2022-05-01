@@ -57,7 +57,9 @@
                  Grid.Row="1"/>
         <TextBox Height="111" Margin="10,903,682,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="PRICE&#xD;&#xA;$15" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
 
-        <Button  HorizontalAlignment="Left" Margin="666,910,0,0" Grid.Row="1" Width="162" Click="Button_Click" Height="114" VerticalAlignment="Top">
+        <Button  HorizontalAlignment="Left" 
+                 Cursor="Hand"
+                 Margin="666,910,0,0" Grid.Row="1" Width="162"  Height="114" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>

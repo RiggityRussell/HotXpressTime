@@ -13,6 +13,7 @@
     <None Remove="images\cotta.PNG" />
     <None Remove="images\figDisplay1.PNG" />
     <None Remove="images\figSmoothie.jpeg" />
+    <None Remove="images\figTarte.jpg" />
     <None Remove="images\pannaCotta.jpeg" />
     <None Remove="images\smoothie.PNG" />
     <None Remove="images\tacos.PNG" />
@@ -27,6 +28,7 @@
     <Resource Include="images\cotta.PNG" />
     <Resource Include="images\figDisplay1.PNG" />
     <Resource Include="images\figSmoothie.jpeg" />
+    <Resource Include="images\figTarte.jpg" />
     <Resource Include="images\pannaCotta.jpeg" />
     <Resource Include="images\smoothie.PNG" />
     <Resource Include="images\tacos.PNG" />

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:HotXpressTime.MenuItems"
       mc:Ignorable="d" 
       d:DesignHeight="1792" d:DesignWidth="828"
-      Title="FigSmoothie" Background="white">
+      Title="FigSmoothie">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -21,7 +21,9 @@
         <TextBox Height="245" Margin="264,769,264,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Text="INGREDIENTS:&#xA;Figs&#xA;Banana&#xD;&#xA;Milk&#xD;&#xA;Orange Juice&#xD;&#xA;Chia Seeds" FontSize="30" FontWeight="Bold" Grid.Row="1"/>
         <TextBox Margin="10,903,682,10" TextWrapping="Wrap" Text="PRICE&#xA;$12" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
 
-        <Button HorizontalAlignment="Left" Height="114" Margin="666,910,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Click="Button_Click">
+        <Button HorizontalAlignment="Left" 
+                Cursor="Hand"
+                Height="114" Margin="666,910,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>

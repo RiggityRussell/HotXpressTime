@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:HotXpressTime.MenuItems"
       mc:Ignorable="d" 
       d:DesignHeight="1792" d:DesignWidth="828"
-      Title="Bacon Wrapped Figs" Background="white">
+      Title="Bacon Wrapped Figs">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -21,7 +21,14 @@
         <TextBox Height="183" Margin="264,831,264,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Text="INGREDIENTS:&#xD;&#xA;Goat Cheese&#xD;&#xA;Figs&#xD;&#xA;Bacon" FontSize="30" FontWeight="Bold" Grid.Row="1"/>
         <TextBox Height="111" Margin="10,903,682,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="PRICE&#xD;&#xA;$15" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
 
-        <Button  HorizontalAlignment="Left" Margin="666,910,0,0" Grid.Row="1" Width="162" Click="Button_Click" Height="114" VerticalAlignment="Top">
+        <Button  HorizontalAlignment="Left" 
+                 Margin="666,910,0,0"
+                 Grid.Row="1" 
+                 Width="162" 
+                 Click="Button_Click" 
+                 Height="114"
+                 Cursor="Hand"
+                 VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>
