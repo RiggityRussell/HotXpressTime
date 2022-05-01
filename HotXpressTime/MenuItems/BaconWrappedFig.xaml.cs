@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,9 +25,16 @@ namespace HotXpressTime.MenuItems
         {
             InitializeComponent();
         }
-        private void BWF_Cart(object sender, RoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You've add 1 order of Bacon Wrapped Figs");
+
+            MessageBox.Show("You have added 1 Order \nof Delicious Bacon \nWrapped Figs to your cart.");
+            string item = "Bacon Wrapped Figs";
+
+            Utilities.getMenuItem(item);
         }
     }
 }
+    
+
