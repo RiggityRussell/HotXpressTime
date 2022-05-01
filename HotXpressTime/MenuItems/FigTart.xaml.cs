@@ -24,5 +24,10 @@ namespace HotXpressTime.MenuItems
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show("You have added 1 Order \nof Fresh Fig Tarts.");
+        }
     }
 }
