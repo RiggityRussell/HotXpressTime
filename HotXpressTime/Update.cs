@@ -19,5 +19,20 @@ namespace HotXpressTime
             }
             
         }
+
+        internal static void CompleteCustomerOrder(List<Orders> orders)
+        {
+            using (StreamWriter stream = new StreamWriter("Data/cart.txt", false))
+            {
+                foreach (var item in orders)
+                {
+                    string info = $"{item.Customer},{item.Total},{item.MenuItem},";
+                    stream.Write(info);
+
+                }
+                stream.Close();
+            }
+
+        }
     }
 }

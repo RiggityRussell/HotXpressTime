@@ -33,11 +33,20 @@ namespace HotXpressTime
                 SetItemListView(orders);
             }
         }
-
         private void SetItemListView(List<Orders> orders)
         {
+            Orders.Items.Refresh();
             Orders.ItemsSource = orders;
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            List<Orders> orders = Utilities.GetCustomerOrders();
+
+            orders.RemoveAt(0);
+
+            Update.CompleteCustomerOrder(orders);
+            SetItemListView(orders);
         }
     }
 }

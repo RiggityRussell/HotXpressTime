@@ -92,10 +92,10 @@ namespace HotXpressTime
                 order.Customer = fileArray[0];
                 order.Total = Convert.ToDouble(fileArray[1]);
 
-                if(fileContents.Length >= 2)
+                if(fileArray.Length > 3)
                 {
                     
-                    foreach (string line in fileArray)
+                    foreach (string line in fileArray.Skip(2))
                     {
                         itemDescripton += line + ",";
                     }
