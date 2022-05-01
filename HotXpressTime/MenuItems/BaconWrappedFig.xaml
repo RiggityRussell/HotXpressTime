@@ -34,6 +34,7 @@
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="108" 
+                 TextAlignment="Center"
                  Text="Qty. 6" 
                  FontSize="30" 
                  FontWeight="Bold" 

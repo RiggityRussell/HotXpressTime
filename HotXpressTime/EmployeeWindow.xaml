@@ -15,10 +15,10 @@
         <ListView x:Name="Orders" Margin="127,190,114,136" Grid.ColumnSpan="2">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <WrapPanel>
-                        <TextBlock Text="{Binding Customer}" FontWeight="Bold" FontSize="30px"/>
-                        <TextBlock Text="{Binding Total}" FontWeight="Bold" FontSize="30px" />
-                        <TextBlock Text="{Binding MenuItem}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap" />
+                    <WrapPanel >
+                        <TextBlock Text="{Binding Customer}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding Total}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding MenuItem}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
                     </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
