@@ -28,7 +28,8 @@ namespace HotXpressTime
 
         private void GetCustomerOrders()
         {
-
+            TextBox textBox = new TextBox();
+            gri
         }
     }
 }

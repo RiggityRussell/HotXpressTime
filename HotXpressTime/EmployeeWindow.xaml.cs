@@ -22,6 +22,13 @@ namespace HotXpressTime
         public EmployeeWindow()
         {
             InitializeComponent();
+            GetCustomerOrders();
+        }
+
+        private void GetCustomerOrders()
+        {
+            TextBox textBox = new TextBox();
+            dataGrid.Children
         }
     }
 }
