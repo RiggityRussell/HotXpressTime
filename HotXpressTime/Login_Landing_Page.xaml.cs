@@ -32,18 +32,22 @@ namespace HotXpressTime
             string password = passwordBox.Password.ToString();
             bool valid = false;
 
-            if(username != "" && password != "")
+            if (username != "" && password != "")
             {
                 valid = Utilities.GetValidUserInfo(username, password);
 
                 if (valid)
                 {
-                    MessageBox.Show($"Welcome back,{username}!","Welcome Message");
+                    MessageBox.Show($"Welcome back,{username}!", "Welcome Message");
                 }
                 else
                 {
                     MessageBox.Show($"Could not find that user, Please try againg.", "No User Found");
                 }
+            }
+            else if (username == "Employee")
+            {
+
             }
             else
             {
