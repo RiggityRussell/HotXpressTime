@@ -37,10 +37,16 @@ namespace HotXpressTime.MenuItems
 
                     Utilities.getMenuItem(item);
                     break;
+
                 case MessageBoxResult.No:
                     MessageBox.Show("More for me then!");
                     break;
-            }
+            }  
+        }
+
+        private void ViewCart_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
