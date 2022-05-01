@@ -62,7 +62,7 @@
 
         <Button  HorizontalAlignment="Left" 
                  Cursor="Hand"
-                 Margin="666,910,0,0" Grid.Row="1" Width="162"  Height="114" VerticalAlignment="Top">
+                 Margin="666,910,0,0" Grid.Row="1" Width="162"  Height="114" VerticalAlignment="Top" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>

@@ -27,7 +27,23 @@ namespace HotXpressTime.MenuItems
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            MessageBox.Show("You have added 1 Order \nof Fresh Fig Tarts.");
+            MessageBoxResult result = MessageBox.Show("Would you like to add a Fig Tart?", "TART", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("You have added 1 Order \nof Fig Tart to your cart.");
+                    string item = "Fig Tart";
+
+                    Utilities.getMenuItem(item);
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("More for me then!");
+                    break;
+            }
+
+
+
+
         }
     }
 }

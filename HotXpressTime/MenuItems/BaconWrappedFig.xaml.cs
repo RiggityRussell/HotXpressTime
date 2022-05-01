@@ -29,10 +29,23 @@ namespace HotXpressTime.MenuItems
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            MessageBox.Show("You have added 1 Order \nof Delicious Bacon \nWrapped Figs to your cart.");
-            string item = "Bacon Wrapped Figs";
+            MessageBoxResult result= MessageBox.Show("Would you like to add Bacon Wrapped Figs?", "Bacon FIGS", MessageBoxButton.YesNo);
+            switch(result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("You have added 1 Order \nof Delicious Bacon \nWrapped Figs to your cart.");
+                    string item = "Bacon Wrapped Figs";
 
-            Utilities.getMenuItem(item);
+                    Utilities.getMenuItem(item);
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("More for me then!");
+                    break;
+            }
+
+
+
+           
         }
     }
 }
