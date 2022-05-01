@@ -82,6 +82,8 @@ namespace HotXpressTime
 
         }
 
+       
+
         private void navToMenu(object sender, RoutedEventArgs e)
         {
             MainWindowFrame.NavigationService.Navigate(new Uri("Menu_Page.xaml", UriKind.Relative));
@@ -267,6 +269,107 @@ namespace HotXpressTime
                     UpdateLocationBlock.Text = location.ToString();
                 }
             }
+        }
+
+        private void NavToBcnWrpFig(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/BaconWrappedFig.xaml", UriKind.Relative));
+            /*Show Menu, Log in, Checkout Button*/
+            Menu_Button.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            CheckoutButton.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
+
+        }
+
+        private void NavToPPFT(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/PulledPorkTacos.xaml", UriKind.Relative));
+            /*Show Menu, Log in, Checkout Button*/
+            Menu_Button.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            CheckoutButton.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
+        }
+
+        private void NavToFigSmooth(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/FigSmoothie.xaml", UriKind.Relative));
+            /*Show Menu, Log in, Checkout Button*/
+            Menu_Button.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            CheckoutButton.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
+        }
+
+        private void FigPannacotta(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/FigSmoothie.xaml", UriKind.Relative));
+            /*Show Menu, Log in, Checkout Button*/
+            Menu_Button.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            CheckoutButton.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
+        }
+
+        private void NavToFigTart(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("MenuItems/FigSmoothie.xaml", UriKind.Relative));
+            /*Show Menu, Log in, Checkout Button*/
+            Menu_Button.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            CheckoutButton.Visibility = Visibility.Visible;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
         }
     }
 }

@@ -169,6 +169,7 @@
                 Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808"
+                    Click="NavToBcnWrpFig"
                 >
                 <Image x:Name="BWF_Button" Source="images/baconfigs.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
@@ -177,9 +178,10 @@
                 FontFamily="Georgia"
                 FontSize="50"
                 Height="208" 
-            Cursor="Hand"
+                Cursor="Hand"
                 VerticalAlignment="Center"
                 Width="808"
+                Click="NavToPPFT" 
             >
                 <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
@@ -189,10 +191,10 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,1068,0,0" 
-            Cursor="Hand"
-            
+                Cursor="Hand"
                 VerticalAlignment="Top"
-                Width="808">
+                Width="808"
+                Click="NavToFigSmooth">
                 <Image x:Name="FS_Button" Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
             <Button x:Name="Fig_Panacotta"  
@@ -201,8 +203,8 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,1328,0,0" 
-            Cursor="Hand"
-            
+                Cursor="Hand"
+                Click="FigPannacotta"
                 VerticalAlignment="Top"
                 Width="808">
                 <Image x:Name="FP_Button" Source="images/cotta.PNG" Width="808" Height="208" Stretch="Fill"/>
@@ -214,9 +216,9 @@
                 FontSize="50"
                 Height="208" 
                 Margin="0,1576,0,0" 
-            Cursor="Hand"
+                Cursor="Hand"
                 VerticalAlignment="Top"
-              
+                Click="NavToFigTart"
                 Width="808">
                 <Image x:Name="FT_Button" Source="images/tart.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
