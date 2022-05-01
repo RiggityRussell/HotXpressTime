@@ -157,5 +157,8 @@
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Width="698" />
+        <Image Margin="65,1145,536,517" Source="/images/DiscoverLogo.png" Stretch="Fill"/>
+        <Image Margin="316,1145,283,502" Source="/images/MCLogo.png" Stretch="Fill"/>
+        <Image Margin="557,1142,65,514" Source="/images/VISALogo.png" Stretch="Fill"/>
     </Grid>
 </Page>
