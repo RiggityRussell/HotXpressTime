@@ -24,5 +24,26 @@ namespace HotXpressTime.MenuItems
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBoxResult result = MessageBox.Show("Would you like to add Panna Cotta?", "Panna Cotta", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("You have added 1 Order \nof Panna Cotta to your cart.");
+                    string item = "Fig Panna Cotta";
+
+                    Utilities.getMenuItem(item);
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("More for me then!");
+                    break;
+            }
+
+
+
+
+        }
     }
 }

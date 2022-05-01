@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +25,29 @@ namespace HotXpressTime.MenuItems
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBoxResult result= MessageBox.Show("Would you like to add Bacon Wrapped Figs?", "Bacon FIGS", MessageBoxButton.YesNo);
+            switch(result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("You have added 1 Order \nof Delicious Bacon \nWrapped Figs to your cart.");
+                    string item = "Bacon Wrapped Figs";
+
+                    Utilities.getMenuItem(item);
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("More for me then!");
+                    break;
+            }
+
+
+
+           
+        }
     }
 }
+    
+
