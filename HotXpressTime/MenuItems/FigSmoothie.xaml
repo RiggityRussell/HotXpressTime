@@ -19,6 +19,7 @@
         
         <TextBox HorizontalAlignment="Center" 
                  TextAlignment="Center"
+                 IsHitTestVisible="False"
                  Height="219" Margin="0,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="536" Text="Thiccc Fig Smoothie!" FontSize="70" FontWeight="Bold"/>
         
         <TextBox HorizontalAlignment="Center"
@@ -28,9 +29,14 @@
                  VerticalAlignment="Top"
                  Width="142" 
                  Text="Qty. 16oz" 
+                 IsHitTestVisible="False"
                  FontSize="30" FontWeight="Bold" Grid.Row="1"/>
-        <TextBox Height="245" Margin="264,769,264,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Text="INGREDIENTS:&#xA;Figs&#xA;Banana&#xD;&#xA;Milk&#xD;&#xA;Orange Juice&#xD;&#xA;Chia Seeds" FontSize="30" FontWeight="Bold" Grid.Row="1"/>
-        <TextBox Margin="10,903,682,10" TextWrapping="Wrap" Text="PRICE&#xA;$12" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
+        <TextBox Height="245" 
+                 IsHitTestVisible="False"
+                 Margin="264,769,264,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Text="INGREDIENTS:&#xA;Figs&#xA;Banana&#xD;&#xA;Milk&#xD;&#xA;Orange Juice&#xD;&#xA;Chia Seeds" FontSize="30" FontWeight="Bold" Grid.Row="1"/>
+        <TextBox Margin="10,903,682,10" 
+                 IsHitTestVisible="False"
+                 TextWrapping="Wrap" Text="PRICE&#xA;$12" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
 
         <Button x:Name="smoothieCartButton" HorizontalAlignment="Left" 
                 Cursor="Hand"
