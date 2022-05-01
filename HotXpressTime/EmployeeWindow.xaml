@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="EmployeeWindow" Height="1792" Width="828" Background="DarkGray">
+        Title="EmployeeWindow" Height="1792" Width="828" Background="#FFF4AC6C">
     <Grid Width="771" Margin="28,210,28,282">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="530*"/>
             <ColumnDefinition Width="241*"/>
         </Grid.ColumnDefinitions>
         <Frame x:Name="MainWindowFrame" Width="771" Background="Beige" Margin="0,0,0,10" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
-        <ListView x:Name="Orders" Margin="127,190,114,136" Grid.ColumnSpan="2">
+        <ListView x:Name="Orders" Margin="100,244,140,258" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
+                
                 <DataTemplate>
                     <WrapPanel >
                         <TextBlock Text="{Binding Customer}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
@@ -69,5 +70,6 @@
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9"/>
+        <Button Content="Complete Order" HorizontalAlignment="Left" Margin="191,161,0,0" VerticalAlignment="Top" Height="58" Width="401" Background="#FFF4AC6C" Foreground="#FFFAFDF7" FontSize="45" Grid.ColumnSpan="2" Click="Button_Click"/>
     </Grid>
 </Window>
