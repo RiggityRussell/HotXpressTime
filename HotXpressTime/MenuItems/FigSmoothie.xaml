@@ -35,6 +35,7 @@
         <TextBox HorizontalAlignment="Center"
                  Height="69" 
                  Margin="0,705,0,0" 
+                 TextAlignment="Center"
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
                  Width="142" 

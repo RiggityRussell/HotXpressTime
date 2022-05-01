@@ -43,6 +43,7 @@
                  VerticalAlignment="Top"
                  Width="108" 
                  Text="Qty. 2" 
+                 TextAlignment="Center"
                  FontSize="30" 
                  FontWeight="Bold" 
                  Grid.Row="1"
