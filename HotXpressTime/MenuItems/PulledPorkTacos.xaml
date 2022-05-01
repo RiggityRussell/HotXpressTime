@@ -30,19 +30,25 @@
                  TextAlignment="Center"
                  Text="Fig Pulled Pork TACOS!" 
                  FontSize="70" 
-                 FontWeight="Bold"/>
+                 FontWeight="Bold"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
 
         <TextBox HorizontalAlignment="Center" 
                  IsHitTestVisible="False"
-                 Height="69" 
-                 Margin="0,587,0,0" 
+                 Height="84" 
+                 Margin="0,572,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="108" 
-                 Text="Qty. 3" 
+                 Width="156" 
+                 Text="Qty. 1 Slice" 
                  FontSize="30" 
                  FontWeight="Bold" 
-                 Grid.Row="1"/>
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
 
         <TextBox Height="244" 
                  Margin="146,661,128,0" 
@@ -53,7 +59,11 @@
                  TextAlignment="Center"
                  FontSize="30" 
                  FontWeight="Bold" 
-                 Grid.Row="1"/>
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
+
         <TextBox Height="111" 
                  Margin="10,903,682,0" 
                  TextWrapping="Wrap" 
@@ -62,7 +72,10 @@
                  Text="PRICE&#xD;&#xA;$15" 
                  FontSize="40" 
                  FontWeight="Bold" 
-                 Grid.Row="1"/>
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
 
         <Button  HorizontalAlignment="Left" 
                  Cursor="Hand"

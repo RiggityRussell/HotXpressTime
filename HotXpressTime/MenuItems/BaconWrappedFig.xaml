@@ -18,16 +18,52 @@
         <Image x:Name="BWF" Source="../images/wrappedFig.jpeg" Stretch="fill" Margin="0,0,0,362" Grid.Row="1" />
         <TextBox HorizontalAlignment="Center" 
                  IsHitTestVisible="False"
-                 Height="219" Margin="0,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="536" Text="Delicious Bacon Wrapped FIGS!" FontSize="70" FontWeight="Bold"/>
+                 Height="200" 
+                 Margin="0,480,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="532" Text="Delicious Bacon Wrapped FIGS!" 
+                 FontSize="70" FontWeight="Bold"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
+        
         <TextBox HorizontalAlignment="Center" 
                  IsHitTestVisible="False"
-                 Height="69" Margin="0,688,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Text="Qty. 6" FontSize="30" FontWeight="Bold" Grid.Row="1"/>
+                 Height="69" Margin="0,688,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="108" 
+                 Text="Qty. 6" 
+                 FontSize="30" 
+                 FontWeight="Bold" 
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
+        
         <TextBox Height="183" Margin="264,831,264,0" 
                  IsHitTestVisible="False"
-                 TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Text="INGREDIENTS:&#xD;&#xA;Goat Cheese&#xD;&#xA;Figs&#xD;&#xA;Bacon" FontSize="30" FontWeight="Bold" Grid.Row="1"/>
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Width="301" 
+                 Text="INGREDIENTS:&#xD;&#xA;Goat Cheese&#xD;&#xA;Figs&#xD;&#xA;Bacon" 
+                 FontSize="30" FontWeight="Bold" Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
+        
         <TextBox Height="111" Margin="10,903,682,0" 
                  IsHitTestVisible="False"
-                 TextWrapping="Wrap" VerticalAlignment="Top" Text="PRICE&#xD;&#xA;$15" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Text="PRICE&#xD;&#xA;$15"
+                 FontSize="40" 
+                 FontWeight="Bold"
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
 
         <Button  HorizontalAlignment="Left" 
                  Margin="666,910,0,0"

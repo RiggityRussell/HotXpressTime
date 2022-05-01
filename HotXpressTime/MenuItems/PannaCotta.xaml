@@ -30,7 +30,10 @@
                  TextAlignment="Center"
                  Text="Fig Panna Cotta!" 
                  FontSize="70" 
-                 FontWeight="Bold"/>
+                 FontWeight="Bold"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
         
         <TextBox HorizontalAlignment="Center" 
                  Height="69" 
@@ -42,25 +45,36 @@
                  Text="Qty. 2" 
                  FontSize="30" 
                  FontWeight="Bold" 
-                 Grid.Row="1"/>
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
         
         <TextBox Height="183" 
                  Margin="146,722,128,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  IsHitTestVisible="False"
-                 Text="
-                 
-                 
-                 
-                 Fig Panna cotta is a creamy delicious dessert, with figs!" 
+                 Text="Fig Panna cotta is a creamy delicious dessert, with figs!" 
                  TextAlignment="Center"
                  FontSize="30" 
                  FontWeight="Bold" 
-                 Grid.Row="1"/>
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
+        
         <TextBox Height="111" Margin="10,903,682,0" 
                  IsHitTestVisible="False"
-                 TextWrapping="Wrap" VerticalAlignment="Top" Text="PRICE&#xD;&#xA;$15" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Text="PRICE&#xD;&#xA;$15" 
+                 FontSize="40" 
+                 FontWeight="Bold" 
+                 Grid.Row="1"
+                 Background="Transparent"
+                 Foreground="BlanchedAlmond"
+                 BorderBrush="Transparent"/>
 
         <Button  HorizontalAlignment="Left" 
                  Cursor="Hand"
