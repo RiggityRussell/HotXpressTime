@@ -44,10 +44,7 @@ namespace HotXpressTime.MenuItems
             }  
         }
 
-        private void ViewCart_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 }
     
