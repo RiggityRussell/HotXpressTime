@@ -308,7 +308,31 @@
      BlurRadius="0"/>
                 </TextBlock.Effect>
             </TextBlock>
-            
+            <TextBlock x:Name="Test"
+                HorizontalAlignment="Left" 
+                       FontSize="75"
+                       Height="143" 
+                       Margin="166,343,0,0" 
+                       TextWrapping="Wrap"
+                       Text="" 
+                       VerticalAlignment="Top" 
+                       Width="406"/>
+            <Button Content="View Cart" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Width="218" Height="107" 
+                Background="#00de81"
+                Foreground="White"
+                Cursor="Hand"
+                FontFamily="Arial"
+                FontSize="40" Margin="0,1456,0,0"  FontWeight="Bold">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
 
         </Grid>
     </ScrollViewer>

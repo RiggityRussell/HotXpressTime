@@ -23,6 +23,16 @@ namespace HotXpressTime
         public MainWindow()
         {
             InitializeComponent();
+            /*
+            DateTime hourvalue = DateTime.Now;
+            hourvalue.ToString("H");
+            Test.Text = hourvalue.ToString("H");
+            */
+
+
+
+
+
             //LogInButton.Visibility = Visibility.Collapsed;
             SignUpButton.Visibility = Visibility.Collapsed;
             /*Hide the menu buttons*/
@@ -78,7 +88,7 @@ namespace HotXpressTime
             }
 
 
-            // Console.WriteLine((int)dateValue.DayOfWeek);
+            
 
         }
 
