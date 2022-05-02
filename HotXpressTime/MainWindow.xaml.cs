@@ -46,6 +46,10 @@ namespace HotXpressTime
             Fig_Smoothie1.Visibility= Visibility.Collapsed;
             Fig_Panacotta1.Visibility= Visibility.Collapsed;
             Fig_Tart.Visibility= Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
 
             string location;
 
@@ -116,6 +120,10 @@ namespace HotXpressTime
             Fig_Tart.Visibility = Visibility.Visible;
             // Viewcart button
             ViewCartButton.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
 
         }
 
@@ -140,6 +148,10 @@ namespace HotXpressTime
             Fig_Smoothie1.Visibility = Visibility.Collapsed;
             Fig_Panacotta1.Visibility = Visibility.Collapsed;
             Fig_Tart.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
 
         private void Nav_ToLogin(object sender, RoutedEventArgs e)
@@ -161,6 +173,10 @@ namespace HotXpressTime
             Fig_Smoothie1.Visibility = Visibility.Collapsed;
             Fig_Panacotta1.Visibility = Visibility.Collapsed;
             Fig_Tart.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
 
         }
 
@@ -181,6 +197,10 @@ namespace HotXpressTime
             Fig_Smoothie1.Visibility = Visibility.Collapsed;
             Fig_Panacotta1.Visibility = Visibility.Collapsed;
             Fig_Tart.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
 
         private void Change_Day(object sender, RoutedEventArgs e)
@@ -314,6 +334,10 @@ namespace HotXpressTime
             Fig_Tart.Visibility = Visibility.Collapsed;
             // Cart button
             ViewCartButton.Visibility = Visibility.Visible;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
 
 
         }
@@ -338,6 +362,10 @@ namespace HotXpressTime
             Fig_Tart.Visibility = Visibility.Collapsed;
             // Cart button
             ViewCartButton.Visibility = Visibility.Visible;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
 
         private void NavToFigSmooth(object sender, RoutedEventArgs e)
@@ -360,6 +388,10 @@ namespace HotXpressTime
             Fig_Tart.Visibility = Visibility.Collapsed;
             // Cart button
             ViewCartButton.Visibility = Visibility.Visible;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
 
         private void FigPannacotta(object sender, RoutedEventArgs e)
@@ -382,6 +414,10 @@ namespace HotXpressTime
             Fig_Tart.Visibility = Visibility.Collapsed;
             // Cart button
             ViewCartButton.Visibility = Visibility.Visible;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
 
         private void NavToFigTart(object sender, RoutedEventArgs e)
@@ -404,6 +440,10 @@ namespace HotXpressTime
             Fig_Tart.Visibility = Visibility.Collapsed;
             // Cart button
             ViewCartButton.Visibility = Visibility.Visible;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
 
         private void ViewCart(object sender, RoutedEventArgs e)
@@ -425,8 +465,67 @@ namespace HotXpressTime
             LoginButton.Visibility = Visibility.Visible;
             CheckoutButton.Visibility = Visibility.Collapsed;// Cart button
             ViewCartButton.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Visible;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Visible;
 
+        }
 
+        
+        private void ContinueShopping_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("Menu_Page.xaml", UriKind.Relative));
+            Menu_Button.Visibility = Visibility.Collapsed;
+            HotXpressTextBlock.Visibility = Visibility.Collapsed;
+            CheckoutButton.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            //LogInButton.Visibility = Visibility.Collapsed;
+            SignUpButton.Visibility = Visibility.Collapsed;
+            /*Show the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Visible;
+            PPFT_Button1.Visibility = Visibility.Visible;
+            Fig_Smoothie.Visibility = Visibility.Visible;
+            Fig_Panacotta.Visibility = Visibility.Visible;
+            FT_Button1.Visibility = Visibility.Visible;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Visible;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Visible;
+            Fig_Smoothie1.Visibility = Visibility.Visible;
+            Fig_Panacotta1.Visibility = Visibility.Visible;
+            Fig_Tart.Visibility = Visibility.Visible;
+            // Viewcart button
+            ViewCartButton.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
+
+        }
+
+      private void Checkout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.NavigationService.Navigate(new Uri("Check_Out.xaml", UriKind.Relative));
+            CheckoutButton.Visibility = Visibility.Collapsed;
+            Menu_Button.Visibility = Visibility.Visible;
+            LoginButton.Visibility = Visibility.Visible;
+            HotXpressTextBlock.Visibility = Visibility.Collapsed;
+            //LogInButton.Visibility = Visibility.Collapsed;
+            SignUpButton.Visibility = Visibility.Collapsed;
+            /*Hide the menu buttons*/
+            BaconWrappedFigs.Visibility = Visibility.Collapsed;
+            PPFT_Button1.Visibility = Visibility.Collapsed;
+            Fig_Smoothie.Visibility = Visibility.Collapsed;
+            Fig_Panacotta.Visibility = Visibility.Collapsed;
+            FT_Button1.Visibility = Visibility.Collapsed;
+            Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+            Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+            Fig_Smoothie1.Visibility = Visibility.Collapsed;
+            Fig_Panacotta1.Visibility = Visibility.Collapsed;
+            Fig_Tart.Visibility = Visibility.Collapsed;
+            //Continue Shopping Button
+            ContinueShopping.Visibility = Visibility.Collapsed;
+            //Checkout Button
+            Checkout.Visibility = Visibility.Collapsed;
         }
     }
 }

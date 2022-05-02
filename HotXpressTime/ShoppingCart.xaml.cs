@@ -26,16 +26,7 @@ namespace HotXpressTime
             List<menuItems> menuItems = Utilities.GetCart();
             Orders.ItemsSource = menuItems;
         }
-
-        private void ContinueShopping_Click(object sender, RoutedEventArgs e)
-        {
-            ContinueShopping.Content = new MainWindow();
-        }
-
-        private void Checkout_Click(object sender, RoutedEventArgs e)
-        {
-            Checkout.Content = new MainWindow();
-        }
+  
 
         private void Total_Click(object sender, RoutedEventArgs e)
         {

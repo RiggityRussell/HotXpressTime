@@ -36,18 +36,22 @@ namespace HotXpressTime
             if(!nameIsValid)
             { 
                  MessageBox.Show($"Invalid Name Entry: {NameOnCard.Text}");
+                NameOnCard.Clear();
             }
             if (!cardIsValid)
             {
                 MessageBox.Show($"Invalid card entry: {cardNumber.Text}");
+                cardNumber.Clear();
             }
             if (!expIsValid)
             {
                 MessageBox.Show($"Invalid Expiration Date: {EXP.Text}");
+                EXP.Clear();
             }
             if (!cvvIsValid)
             {
                 MessageBox.Show($"Invalid CVV: {CVV.Text}");
+                CVV.Clear();
             }
             
 
@@ -68,6 +72,7 @@ namespace HotXpressTime
 
                 if (NameOnCard.Text.Contains(item))                                       
                 {
+                    NameOnCard.Clear();
                     isValid = false;
                 }
             }
@@ -80,6 +85,7 @@ namespace HotXpressTime
             bool isValid = true;
             if(!(cardNumber.Text.Length == 16))
             {
+                cardNumber.Clear();
                 isValid = false;
             }
 
@@ -113,12 +119,14 @@ namespace HotXpressTime
 
             if (!(month.Length == 2 && year.Length == 4))
             {
+                EXP.Clear();
                 isValid = false;
             }
 
             int parsedValue = 0;
             if (!int.TryParse(month, out parsedValue) || !int.TryParse(year, out parsedValue))
             {
+                EXP.Clear();
                 isValid = false;
             }
 
@@ -132,13 +140,14 @@ namespace HotXpressTime
             bool isValid = true;
             if (!(CVV.Text.Length == 3))
             {
+                CVV.Clear();
                 isValid = false;
             }
 
             int parsedValue = 0;
             if (!int.TryParse(CVV.Text, out parsedValue))
             {
-
+                CVV.Clear();
                 isValid = false;
             }
             return isValid;
