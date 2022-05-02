@@ -57,7 +57,8 @@ namespace HotXpressTime
 
             if (nameIsValid && cardIsValid && expIsValid && cvvIsValid)
             {
-                //Place thank you for your order page or add navigation to wait time.... or both
+                MessageBox.Show($"Thank you for submitting your order!");
+                this.Content = null;
             }
         }
 
