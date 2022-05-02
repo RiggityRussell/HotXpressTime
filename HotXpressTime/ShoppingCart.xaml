@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
         <Label Foreground="black">Shopping Cart</Label>
-        <ListView x:Name="Orders" Margin="57,156,57,718" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2">
+        <ListView x:Name="Orders" Margin="57,402,57,718" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2">
             <ListView.ItemTemplate>
 
                 <DataTemplate>
