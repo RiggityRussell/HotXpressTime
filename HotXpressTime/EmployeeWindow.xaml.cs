@@ -22,6 +22,7 @@ namespace HotXpressTime
         public EmployeeWindow()
         {
             InitializeComponent();
+            SetWaitTime();
             GetCustomerOrders();
         }
 
@@ -47,6 +48,21 @@ namespace HotXpressTime
 
             Update.CompleteCustomerOrder(orders);
             SetItemListView(orders);
+        }
+        private void SetWaitTime()
+        {
+            List<Orders> orders = Utilities.GetCustomerOrders();
+            int orderCount = orders.Count;
+            if (orderCount > 0)
+            {
+                string time = Utilities.GetWaitTime(orderCount);
+                if (time != null)
+                {
+                    UpdateWaitTimeBlock.Text = time + " minutes";
+                    QueueBlock.Text = $"{orderCount} in queue";
+
+                }
+            }
         }
     }
 }

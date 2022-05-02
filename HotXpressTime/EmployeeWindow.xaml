@@ -14,7 +14,7 @@
         <Frame x:Name="MainWindowFrame" Width="771" Background="Beige" Margin="0,0,0,10" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
         <ListView x:Name="Orders" Margin="100,244,140,258" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
-                
+
                 <DataTemplate>
                     <WrapPanel >
                         <TextBlock Text="{Binding Customer}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
@@ -25,7 +25,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <TextBlock x:Name="WaitTimeBlock" HorizontalAlignment="Left" 
-                       Height="115" 
+                       Height="83" 
                        Margin="10,10,0,0" 
                        TextWrapping="Wrap" 
                        Text=" Wait Time: " 
@@ -38,16 +38,16 @@
         <TextBlock x:Name="QueueBlock" 
                 HorizontalAlignment="Left" 
                 Height="83" 
-                Margin="461,26,0,0" 
+                Margin="484,10,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Queue:" 
                 VerticalAlignment="Top" 
-                Width="170"
+                Width="250"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="UpdateQueueBlock" 
+        <!--<TextBlock x:Name="UpdateQueueBlock" 
                 HorizontalAlignment="Left" 
                 Height="83" 
                 Margin="106,26,0,0" 
@@ -58,18 +58,18 @@
                 Background="SandyBrown"
                 Foreground="GhostWhite"
                 FontSize="45"
-                Opacity=".9" Grid.Column="1"/>
+                Opacity=".9" Grid.Column="1"/>-->
         <TextBlock x:Name="UpdateWaitTimeBlock" HorizontalAlignment="Left" 
-                Height="115" 
-                Margin="254,10,0,0" 
+                Height="83" 
+                Margin="249,10,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Minutes" 
                 VerticalAlignment="Top" 
-                Width="202"
+                Width="235"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9"/>
-        <Button Content="Complete Order" HorizontalAlignment="Left" Margin="191,161,0,0" VerticalAlignment="Top" Height="58" Width="401" Background="#FFF4AC6C" Foreground="#FFFAFDF7" FontSize="45" Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Button Content="Complete Order" HorizontalAlignment="Left" Margin="165,160,0,0" VerticalAlignment="Top" Height="67" Width="401" Background="#FFF4AC6C" Foreground="#FFFAFDF7" FontSize="45" Grid.ColumnSpan="2" Click="Button_Click"/>
     </Grid>
 </Window>

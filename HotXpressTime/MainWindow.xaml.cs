@@ -23,13 +23,12 @@ namespace HotXpressTime
         public MainWindow()
         {
             InitializeComponent();
-            /*
-            DateTime hourvalue = DateTime.Now;
-            hourvalue.ToString("H");
-            Test.Text = hourvalue.ToString("H");
-            */
-
-
+            DateTime start = DateTime.Parse(DateTime.Now.ToShortDateString() + " 04:00 AM");
+            DateTime end = DateTime.Parse(DateTime.Now.ToShortDateString() + " 11:00 PM");
+            if (DateTime.Now > start && DateTime.Now < end)
+            {
+                SetWaitTime();
+            }
 
             ViewCartButton.Visibility = Visibility.Visible;
             ViewCartButton.Visibility = Visibility.Collapsed;
@@ -526,6 +525,22 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+        }
+        private void SetWaitTime()
+        {
+            List<Orders> orders = Utilities.GetCustomerOrders();
+            int orderCount = orders.Count;
+            if(orderCount > 0)
+            {
+                string time = Utilities.GetWaitTime(orderCount);
+                if (time != null)
+                {
+                    UpdateWaitTimeBlock.Text = time + " minutes";
+                    QueueBlock.Text =$"{orderCount} in queue";
+
+                }
+            }
+
         }
     }
 }

@@ -21,7 +21,7 @@
                        TextWrapping="Wrap" 
                        Text=" Wait Time: " 
                        VerticalAlignment="Top" 
-                       Width="239"
+                       Width="250"
                        Background="SandyBrown"
                        Foreground="GhostWhite"
                        FontSize="45"
@@ -38,7 +38,7 @@
                 Foreground="GhostWhite"
                 FontSize="45"
                 Opacity=".9" Grid.ColumnSpan="2"/>
-            <TextBlock x:Name="UpdateQueueBlock" 
+            <!--<TextBlock x:Name="UpdateQueueBlock" 
                 HorizontalAlignment="Left" 
                 Height="83" 
                 Margin="144,134,0,0" 
@@ -49,7 +49,7 @@
                 Background="SandyBrown"
                 Foreground="GhostWhite"
                 FontSize="45"
-                Opacity=".9" Grid.Column="1"/>
+                Opacity=".9" Grid.Column="1"/>-->
             <TextBlock x:Name="UpdateWaitTimeBlock" HorizontalAlignment="Left" 
                 Height="115" 
                 Margin="248,134,0,0" 

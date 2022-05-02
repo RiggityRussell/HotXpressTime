@@ -130,7 +130,6 @@ namespace HotXpressTime
 
                 if(fileArray.Length > 3)
                 {
-                    
                     foreach (string line in fileArray.Skip(2))
                     {
                         itemDescripton += line + ",";
@@ -184,5 +183,13 @@ namespace HotXpressTime
             return registeredUsers;
         }
 
+        internal static string GetWaitTime(int orderCount)
+        {
+            string stringTime = "";
+            int time;
+
+            time = (orderCount * 10) + orderCount;
+            return  stringTime = time.ToString();
+        }
     }
 }
