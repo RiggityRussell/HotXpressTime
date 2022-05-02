@@ -78,7 +78,9 @@ namespace HotXpressTime
                 //Some sort of regristation completed toast?
                 MessageBox.Show($"Welcome {username}!", "Welcome", MessageBoxButton.OK, MessageBoxImage.Warning  );
                 //"Profile successfully completed!"
-                
+                passwordBox.Clear();
+                passwordBox_ReEnter.Clear();
+                UsernameBox.Clear();
             }
 
             //Nav back to home menu?

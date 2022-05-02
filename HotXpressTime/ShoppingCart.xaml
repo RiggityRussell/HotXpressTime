@@ -30,34 +30,6 @@
         <Border BorderThickness="1" Grid.Row="1"
         CornerRadius="50,50,125,125" BorderBrush="Black" Background="#210f33" Margin="-2,424,2,0"/>
 
-        <Button x:Name="Checkout" Content="Check Out" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                Width="714" Height="99" 
-                Background="#00de81"
-                Foreground="White"
-                Cursor="Hand"
-                FontFamily="Arial"
-                FontSize="40" Margin="0,696,0,0" Click="Checkout_Click" Grid.Row="1" FontWeight="Bold">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="ContinueShopping" Content="Continue Shopping" HorizontalAlignment="Center" VerticalAlignment="Top" 
-            Width="714" Height="99"
-            Background="white"
-            Foreground="#210f33"
-            Cursor="Hand"
-            FontFamily="Arial"
-            FontSize="40" Margin="0,864,0,0" Click="ContinueShopping_Click" Grid.Row="1" FontWeight="Bold">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-
         <Button x:Name="Total" Content="Total" HorizontalAlignment="Center" VerticalAlignment="Top" 
             Width="270" Height="99"
             Background="#ff4200"

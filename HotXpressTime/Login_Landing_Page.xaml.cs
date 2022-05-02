@@ -39,15 +39,21 @@ namespace HotXpressTime
                 if (valid)
                 {
                     MessageBox.Show($"Welcome back,{username}!", "Welcome Message");
-                    if(username =="Employee")
+                    UsernameBox.Clear();
+                    passwordBox.Clear();
+                    if (username =="Employee")
                     {
                         EmployeeWindow employeeWindow = new EmployeeWindow();
+                        UsernameBox.Clear();
+                        passwordBox.Clear();
                         employeeWindow.Show();
                     }
                 }
                 else
                 {
                     MessageBox.Show($"Could not find that user, Please try again.", "No User Found");
+                    UsernameBox.Clear();
+                    passwordBox.Clear();
                 }
                
             }
@@ -55,7 +61,8 @@ namespace HotXpressTime
             else
             {
                 MessageBox.Show($"Please enter a valid username and password!", "Invalid Credentials");
-
+                UsernameBox.Clear();
+                passwordBox.Clear();
             }
             
         }
