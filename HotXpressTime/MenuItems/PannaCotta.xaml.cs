@@ -32,7 +32,7 @@ namespace HotXpressTime.MenuItems
             {
                 case MessageBoxResult.Yes:
                     MessageBox.Show("You have added 1 Order \nof Panna Cotta to your cart.");
-                    string item = "Fig Panna Cotta";
+                    string item = "Fig Pannacotta";
 
                     Utilities.getMenuItem(item);
                     break;
