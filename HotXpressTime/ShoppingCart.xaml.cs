@@ -27,10 +27,5 @@ namespace HotXpressTime
             Orders.ItemsSource = menuItems;
         }
   
-
-        private void Total_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show($"Your Total is: ");
-        }
     }
 }
