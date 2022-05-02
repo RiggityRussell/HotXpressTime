@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="1792" d:DesignWidth="828"
       Title="PannaCotta">
-   
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
@@ -34,11 +34,11 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        
-        <TextBox HorizontalAlignment="Center" 
-                 Height="69" 
+
+        <TextBox HorizontalAlignment="Left" 
+                 Height="68" 
                  IsHitTestVisible="False"
-                 Margin="0,587,0,0" 
+                 Margin="24,814,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
                  Width="108" 
@@ -50,7 +50,7 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        
+
         <TextBox Height="183" 
                  Margin="146,722,128,0" 
                  TextWrapping="Wrap" 
@@ -64,7 +64,7 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        
+
         <TextBox Height="111" Margin="10,903,682,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 

@@ -32,10 +32,10 @@
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
 
-        <TextBox HorizontalAlignment="Center" 
+        <TextBox HorizontalAlignment="Left" 
                  IsHitTestVisible="False"
                  Height="69" 
-                 Margin="0,587,0,0" 
+                 Margin="6,829,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="108" 
