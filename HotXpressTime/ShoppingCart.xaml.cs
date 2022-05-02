@@ -23,6 +23,8 @@ namespace HotXpressTime
         public ShoppingCart()
         {
             InitializeComponent();
+            List<menuItems> menuItems = Utilities.GetCart();
+            Orders.ItemsSource = menuItems;
         }
 
         private void ContinueShopping_Click(object sender, RoutedEventArgs e)

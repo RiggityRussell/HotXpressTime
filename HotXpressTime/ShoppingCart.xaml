@@ -13,6 +13,20 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
+        <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
+        <Label Foreground="black">Shopping Cart</Label>
+        <ListView x:Name="Orders" Margin="57,156,57,718" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2">
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <WrapPanel Background="Tan">
+                        <TextBlock Text="{Binding items}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding price}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding quantity}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <Border BorderThickness="1" Grid.Row="1"
         CornerRadius="50,50,125,125" BorderBrush="Black" Background="#210f33" Margin="-2,424,2,0"/>
 
@@ -57,6 +71,6 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
+
     </Grid>
 </Page>

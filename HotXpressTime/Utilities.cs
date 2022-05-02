@@ -54,6 +54,42 @@ namespace HotXpressTime
             return isValid;
         }
 
+        internal static List<menuItems> GetCart()
+        {
+            string file = $"Data/cart.txt";
+            string[] fileContents = File.ReadAllLines(file);
+            List<menuItems> itemList = new List<menuItems>();
+            string[] fileArray;
+            foreach (var item in fileContents)
+            {
+                menuItems menuItem = new menuItems();
+                string itemDescripton = "";
+
+                fileArray = item.Split(',');
+                menuItem.items = fileArray[0];
+                menuItem.price = Convert.ToDouble(fileArray[1]);
+                menuItem.quantity = Convert.ToInt32(fileArray[2]);
+                /*if (fileArray.Length > 3)
+                {
+
+                    foreach (string line in fileArray.Skip(2))
+                    {
+                        itemDescripton += line + ",";
+                    }
+                    menuItem.MenuItem = itemDescripton;
+
+                }
+                else
+                {
+                    menuItem.MenuItem = fileArray[2];
+                }*/
+
+                itemList.Add(menuItem);
+            }
+            return itemList;
+        }
+
+
         public static void getMenuItem(string selectedItem)
         {
             string file = $"Data/menuItems.txt";
