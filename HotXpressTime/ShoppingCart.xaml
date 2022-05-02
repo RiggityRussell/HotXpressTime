@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
         <Label Foreground="black">Shopping Cart</Label>
-        <ListView x:Name="Orders" Margin="57,402,57,718" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2">
+        <ListView x:Name="Orders" Margin="57,402,57,579" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2">
             <ListView.ItemTemplate>
 
                 <DataTemplate>
@@ -28,21 +28,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <Border BorderThickness="1" Grid.Row="1"
-        CornerRadius="50,50,125,125" BorderBrush="Black" Background="#210f33" Margin="-2,424,2,0"/>
-
-        <Button x:Name="Total" Content="Total" HorizontalAlignment="Center" VerticalAlignment="Top" 
-            Width="270" Height="99"
-            Background="#ff4200"
-            Foreground="#210f33"
-            Cursor="Hand"
-            FontFamily="Arial"
-            FontSize="40" Margin="0,512,0,0" Click="Total_Click" Grid.Row="1" FontWeight="Bold">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        CornerRadius="50,50,125,125" BorderBrush="Black" Background="#210f33" Margin="-2,512,2,0"/>
 
     </Grid>
 </Page>
