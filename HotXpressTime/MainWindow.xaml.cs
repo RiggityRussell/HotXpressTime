@@ -23,8 +23,8 @@ namespace HotXpressTime
         public MainWindow()
         {
             InitializeComponent();
-            DateTime start = DateTime.Parse(DateTime.Now.ToShortDateString() + " 04:00 AM");
-            DateTime end = DateTime.Parse(DateTime.Now.ToShortDateString() + " 11:00 PM");
+            DateTime start = DateTime.Parse(DateTime.Now.ToShortDateString() + " 11:00 AM");
+            DateTime end = DateTime.Parse(DateTime.Now.ToShortDateString() + " 8:00 PM");
             if (DateTime.Now > start && DateTime.Now < end)
             {
                 SetWaitTime();

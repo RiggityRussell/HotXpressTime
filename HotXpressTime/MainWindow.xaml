@@ -126,18 +126,6 @@
                 Foreground="GhostWhite"
                 FontSize="30"
                 Opacity=".9"/>
-            <TextBlock x:Name="UpdateQueueBlock" 
-                HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="674,134,0,0" 
-                TextWrapping="Wrap" 
-                Text=" " 
-                VerticalAlignment="Top" 
-                Width="128"
-                Background="SandyBrown"
-                Foreground="GhostWhite"
-                FontSize="45"
-                Opacity=".9"/>
             <TextBlock x:Name="UpdateWaitTimeBlock" HorizontalAlignment="Left" 
                 Height="83" 
                 Margin="256,134,0,0" 
