@@ -31,7 +31,7 @@
 
         <TextBox HorizontalAlignment="Left" 
                  IsHitTestVisible="False"
-                 Height="69" Margin="24,829,0,0" 
+                 Height="68" Margin="24,690,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="108" 
@@ -45,7 +45,7 @@
                  BorderBrush="Transparent"
                  />
 
-        <TextBox Height="183" Margin="264,831,264,0" 
+        <TextBox Height="183" Margin="596,667,-70,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
@@ -56,7 +56,7 @@
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
 
-        <TextBox Height="111" Margin="10,903,682,0" 
+        <TextBox Height="111" Margin="10,758,682,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -71,7 +71,7 @@
 
         <Button  
                 HorizontalAlignment="Left" 
-                 Margin="666,910,0,0"
+                 Margin="10,900,0,0"
                  Grid.Row="1" 
                  Width="162" 
                  Click="Button_Click" 

@@ -35,7 +35,7 @@
         <TextBox HorizontalAlignment="Left" 
                  IsHitTestVisible="False"
                  Height="69" 
-                 Margin="6,829,0,0" 
+                 Margin="10,512,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="108" 
@@ -47,10 +47,10 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        <TextBox Height="135" 
+        <TextBox Height="226" 
                  TextAlignment="Center"
                  IsHitTestVisible="False"
-                 Margin="146,722,128,0" 
+                 Margin="560,471,10,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Text="A sweet tart cust is layered with almond cream, fig jam and fresh figs." 
@@ -60,7 +60,7 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        <TextBox Height="111" Margin="10,903,682,0" 
+        <TextBox Height="111" Margin="10,586,682,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -74,7 +74,7 @@
 
         <Button  HorizontalAlignment="Left" 
                  Cursor="Hand"
-                 Margin="666,910,0,0" Grid.Row="1" Width="162" Click="Button_Click" Height="114" VerticalAlignment="Top">
+                 Margin="10,900,0,0" Grid.Row="1" Width="162" Click="Button_Click" Height="114" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>

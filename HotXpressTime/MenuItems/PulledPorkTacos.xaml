@@ -36,11 +36,9 @@
                  BorderBrush="Transparent"/>
 
         <TextBox HorizontalAlignment="Left" 
-                 IsHitTestVisible="False"
-                 Height="84" 
-                 Margin="-15,814,0,0" 
-                 TextWrapping="Wrap" 
-                 VerticalAlignment="Top"
+                 IsHitTestVisible="False" 
+                 Margin="0,503,0,437" 
+                 TextWrapping="Wrap"
                  Width="156" 
                  TextAlignment="Center"
                  Text="Qty. 3" 
@@ -49,10 +47,10 @@
                  Grid.Row="1"
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
-                 BorderBrush="Transparent"/>
+                 BorderBrush="Transparent" RenderTransformOrigin="0.609,0.75"/>
 
-        <TextBox Height="244" 
-                 Margin="146,661,128,0" 
+        <TextBox Height="521" 
+                 Margin="562,503,-3,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -66,7 +64,7 @@
                  BorderBrush="Transparent"/>
 
         <TextBox Height="111" 
-                 Margin="10,903,682,0" 
+                 Margin="12,587,681,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  IsHitTestVisible="False"
@@ -80,7 +78,7 @@
 
         <Button  HorizontalAlignment="Left" 
                  Cursor="Hand"
-                 Margin="666,910,0,0" Grid.Row="1" Width="162"  Height="114" VerticalAlignment="Top" Click="Button_Click">
+                 Margin="-18,900,0,0" Grid.Row="1" Width="162"  Height="114" VerticalAlignment="Top" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>
