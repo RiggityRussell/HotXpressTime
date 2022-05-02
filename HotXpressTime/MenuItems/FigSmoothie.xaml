@@ -16,7 +16,7 @@
 
 
         <Image x:Name="FS" Source="../images/figSmoothie.jpeg" Stretch="fill" Margin="0,0,0,362" Grid.Row="1" />
-        
+
         <TextBox HorizontalAlignment="Center" 
                  TextAlignment="Center"
                  IsHitTestVisible="False"
@@ -31,10 +31,10 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        
-        <TextBox HorizontalAlignment="Center"
-                 Height="69" 
-                 Margin="0,705,0,0" 
+
+        <TextBox HorizontalAlignment="Left"
+                 Height="70" 
+                 Margin="0,822,0,0" 
                  TextAlignment="Center"
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
