@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:HotXpressTime"
       mc:Ignorable="d" 
-      d:DesignHeight="1792" d:DesignWidth="828"
+      d:DesignHeight="900" d:DesignWidth="828"
       Title="Login_Landing_Page">
 
     <Grid>
         <TextBlock HorizontalAlignment="Center" 
                    Height="72" 
-                   Margin="0,378,0,0" 
+                   Margin="0,334,0,0" 
                    TextWrapping="Wrap" 
                    Text="Sign In" 
                    VerticalAlignment="Top" 
@@ -23,7 +23,7 @@
                    Width="578"/>
         <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" 
             Height="69" 
-            Margin="0,553,0,0" 
+            Margin="0,537,0,0" 
             TextWrapping="Wrap" 
             VerticalAlignment="Top"
             FontSize="52"
@@ -32,11 +32,11 @@
             Foreground="DarkGray"
             Width="780"/>
         <PasswordBox x:Name="passwordBox" MaxLength="16" PasswordChar="#" FontSize="50"
-             Margin="24,703,24,1019"/>
+             Margin="24,687,24,1035"/>
         <TextBlock HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Height="78" 
-            Margin="0,649,0,0" 
+            Margin="0,613,0,0" 
             TextWrapping="Wrap" 
             Text="Password"
             FontSize="50"
@@ -54,7 +54,7 @@
         <TextBlock HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Height="78" 
-            Margin="0,499,0,0" 
+            Margin="0,463,0,0" 
             TextWrapping="Wrap" 
             Text="Username"
             FontSize="50"
@@ -69,13 +69,13 @@
                     BlurRadius="0"/>
             </TextBlock.Effect>
         </TextBlock>
-        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                Width="396" Height="67" 
+        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="142" Height="67" 
                 Background="LightCoral"
                 Foreground="WhiteSmoke"
                 Cursor="Hand"
                 FontFamily="Arial"
-                FontSize="40" Margin="0,896,0,0" Click="LogInButton_Click">
+                FontSize="40" Margin="147,789,0,0" Click="LogInButton_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="980" Width="860">
+        Title="MainWindow" Height="900" Width="860">
     <Window.Background>
         <ImageBrush 
                ImageSource="images/figDisplay1.PNG"
@@ -16,14 +16,14 @@
             <Frame x:Name="MainWindowFrame" Margin="0,0,0,10" NavigationUIVisibility="Hidden"/>
             <StackPanel Orientation="Horizontal" Height="124" VerticalAlignment="Top">
                 <Button x:Name="Menu_Button" Content="Menu" 
-                    FontSize="50" 
-                    MinWidth="300" 
-                    MinHeight="100" 
-                    Margin="5,5,5,5"
+                    FontSize="30" 
+                    MinWidth="150" 
+                    MinHeight="40"
+                    Margin="150,2,2,2"
                     Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
-                    FontFamily="Arial" Click="navToMenu">
+                    FontFamily="Arial" Click="navToMenu" Height="50">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -31,14 +31,14 @@
                     </Button.Resources>
                 </Button>
                 <Button x:Name="CheckoutButton" Content="Checkout" 
-                    FontSize="50" 
-                    MinWidth="300" 
-                    MinHeight="100" 
-                    Margin="0,5,5,5"
+                    FontSize="30" 
+                    MinWidth="200" 
+                    MinHeight="40" 
+                    Margin="2,2,2,2"
                     Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
-                    FontFamily="Arial" Click="Nav_ToCheckout">
+                    FontFamily="Arial" Click="Nav_ToCheckout" Height="50">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -46,15 +46,15 @@
                     </Button.Resources>
                 </Button>
                 <Button x:Name="LoginButton" Content="Log In" 
-                    FontSize="50" 
-                    MinWidth="190"
+                    FontSize="30" 
+                    MinWidth="150"
                     MaxWidth="190"
-                    MinHeight="100" 
-                    Margin="0,5,0,5"
+                    MinHeight="50" 
+                    Margin="2,2,2,2"
                     Cursor="Hand"
                     Background="SandyBrown"
                     Foreground="WhiteSmoke"
-                    FontFamily="Arial" Click="Nav_ToLogin">
+                    FontFamily="Arial" Click="Nav_ToLogin" Height="46">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -76,26 +76,26 @@
             VerticalAlignment="Top" 
             Width="594"/>
             <TextBlock x:Name="WaitTimeBlock" HorizontalAlignment="Left" 
-                       Height="83" 
-                       Margin="9,134,0,0" 
+                       Height="53" 
+                       Margin="43,114,0,0" 
                        TextWrapping="Wrap" 
-                       Text=" Wait Time: " 
+                       Text=" Wait Time: " TextAlignment="center" 
                        VerticalAlignment="Top" 
-                       Width="247"
-                       Background="SandyBrown"
-                       Foreground="GhostWhite"
-                       FontSize="45"
+                       Width="183"
+                       Background="#FFF46060"
+                       Foreground="black"
+                       FontSize="30"
                        Opacity=".9"/>
 
             <Button x:Name="SignUpButton" Content="Sign Up" 
-                HorizontalAlignment="Center" 
+                HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
-                Width="396" Height="67" 
+                Width="396" Height="68" 
                 Background="LightSeaGreen"
                 Foreground="WhiteSmoke"
                 Cursor="Hand"
                 FontFamily="Arial"
-                FontSize="40" Margin="0,998,0,0" Click="NavTo_Sign_Up_Page">
+                FontSize="40" Margin="386,790,0,0" Click="NavTo_Sign_Up_Page">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -104,44 +104,53 @@
             </Button>
             <TextBlock x:Name="QueueBlock" 
                 HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="499,134,0,0" 
+                Height="53" 
+                Margin="523,114,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Queue:" 
                 VerticalAlignment="Top" 
-                Width="270"
+                Width="246"
                 Background="SandyBrown"
-                Foreground="GhostWhite"
-                FontSize="45"
+                Foreground="black"
+                FontSize="30"
                 Opacity=".9"/>
             <TextBlock x:Name="UpdateLocationBlock" HorizontalAlignment="Left" 
-                Height="71" 
-                Margin="375,241,0,0" 
+                Height="62" 
+                Margin="394,216,0,0" 
                 TextWrapping="Wrap" 
                 Text=" " 
                 TextAlignment="Center"
                 VerticalAlignment="Top" 
-                Width="427"
+                Width="406"
                 Background="SandyBrown"
-                Foreground="GhostWhite"
+                Foreground="black"
                 FontSize="30"
                 Opacity=".9"/>
             <TextBlock x:Name="UpdateWaitTimeBlock" HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="256,134,0,0" 
+                Height="53" 
+                Margin="256,114,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Minutes" 
                 VerticalAlignment="Top" 
                 Width="243"
-                Background="SandyBrown"
-                Foreground="GhostWhite"
-                FontSize="45"
-                Opacity=".9"/>
+                Background="#FFF46060"
+                Foreground="black"
+                FontSize="30"
+                Opacity=".9" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.034"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
             <Button x:Name="Current_Location_Button" Content="Current Location:" 
-                    HorizontalAlignment="Left" Height="83" 
-                    Margin="10,236,0,0" 
+                    HorizontalAlignment="Left" Height="60" 
+                    Margin="10,216,0,0" 
                     Background="SandyBrown"
-                    Foreground="WhiteSmoke"
+                    Foreground="Black"
                     Opacity=".9"
                     Cursor="Hand"
                     FontSize="40"
@@ -153,7 +162,7 @@
                 FontFamily="Georgia"
                 FontSize="50"
                 Height="208" 
-                Margin="0,532,0,0" 
+                Margin="0,325,0,0" 
                 Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808"
@@ -170,7 +179,7 @@
                 VerticalAlignment="Center"
                 Width="808"
                 Click="NavToPPFT" 
-            >
+                 Margin="0,-475,0,0" >
                 <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
             <Button x:Name="Fig_Smoothie"  
@@ -178,7 +187,7 @@
                 FontFamily="Georgia" 
                 FontSize="50"
                 Height="208" 
-                Margin="0,1068,0,0" 
+                Margin="0,800,0,0" 
                 Cursor="Hand"
                 VerticalAlignment="Top"
                 Width="808"
@@ -190,7 +199,7 @@
                 FontFamily="Georgia"
                 FontSize="50"
                 Height="208" 
-                Margin="0,1328,0,0" 
+                Margin="0,1025,0,0" 
                 Cursor="Hand"
                 Click="FigPannacotta"
                 VerticalAlignment="Top"
@@ -203,34 +212,26 @@
                 FontFamily="Georgia"
                 FontSize="50"
                 Height="208" 
-                Margin="0,1576,0,0" 
+                Margin="0,1250,0,0" 
                 Cursor="Hand"
                 VerticalAlignment="Top"
                 Click="NavToFigTart"
                 Width="808">
                 <Image x:Name="FT_Button" Source="images/tart.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
-            <TextBlock x:Name="Bacon_Wrapped_Figs" Text="Bacon Wrapped Figs"
+            <TextBlock x:Name="Bacon_Wrapped_Figs"
                    HorizontalAlignment="Center" 
-                   Height="112" Margin="0,580,0,0" 
-                   Foreground="BlanchedAlmond"
+                   Height="112" Margin="0,384,0,0" 
+                   Foreground="Black"
                    IsHitTestVisible="False"
                    TextWrapping="Wrap"
                    Cursor="Hand"
-                   VerticalAlignment="Top" Width="594"
-                   FontSize="65">
-                <TextBlock.Effect>
-                    <DropShadowEffect
-      ShadowDepth="3"
-      Direction="225"
-      Color="black"
-     
-     BlurRadius="0"/>
-                </TextBlock.Effect>
-            </TextBlock>
+                   VerticalAlignment="Top" Width="642"
+                   FontSize="65"
+                      ><Run Foreground="BlanchedAlmond" Text="Bacon Wrapped Figs"/></TextBlock>
             <TextBlock x:Name="Pulled_Pork_Fig_Tacos" Text="Pulled Pork Fig Tacos"
-                   HorizontalAlignment="Center" 
-                   Height="112" Margin="0,826,0,0" 
+                   HorizontalAlignment="Left" 
+                   Height="112" Margin="83,601,0,0" 
                    Foreground="BlanchedAlmond"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
@@ -246,8 +247,8 @@
                 </TextBlock.Effect>
             </TextBlock>
             <TextBlock x:Name="Fig_Smoothie1" Text="Fig Smoothie"
-                   HorizontalAlignment="Center" 
-                   Height="112" Margin="0,1116,0,0" 
+                   HorizontalAlignment="Left" 
+                   Height="112" Margin="211,835,0,0" 
                        Foreground="BlanchedAlmond"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
@@ -264,7 +265,7 @@
             </TextBlock>
             <TextBlock x:Name="Fig_Panacotta1" Text="Fig Panacotta"
                    HorizontalAlignment="Left" 
-                   Height="112" Margin="211,1376,0,0" 
+                   Height="112" Margin="211,1083,0,0" 
                    Foreground="BlanchedAlmond"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
@@ -281,7 +282,7 @@
             </TextBlock>
             <TextBlock x:Name="Fig_Tart" Text="Fig Tart"
                    HorizontalAlignment="Left" 
-                   Height="112" Margin="289,1624,0,0"
+                   Height="112" Margin="279,1312,0,0"
                    Foreground="AntiqueWhite"
                    TextWrapping="Wrap"
                    IsHitTestVisible="False"
@@ -314,7 +315,7 @@
                 Foreground="White"
                 Cursor="Hand"
                 FontFamily="Arial"
-                FontSize="40" Margin="0,1456,0,0"  FontWeight="Bold" Click="ViewCart">
+                FontSize="40" Margin="0,1200,0,0"  FontWeight="Bold" Click="ViewCart">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -325,7 +326,7 @@
                     Content="Check Out" 
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Top" 
-                    Width="714" Height="99" 
+                    Width="714" Height="60" 
                     Background="#00de81"
                     Foreground="White"
                     Cursor="Hand"
