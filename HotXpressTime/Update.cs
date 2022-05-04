@@ -22,7 +22,7 @@ namespace HotXpressTime
 
         internal static void CompleteCustomerOrder(List<Orders> orders)
         {
-            using (StreamWriter stream = new StreamWriter("Data/cart.txt", false))
+            using (StreamWriter stream = new StreamWriter("Data/orders.txt", false))
             {
                 foreach (var item in orders)
                 {

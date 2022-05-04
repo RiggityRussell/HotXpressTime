@@ -44,9 +44,13 @@ namespace HotXpressTime
         {
             List<Orders> orders = Utilities.GetCustomerOrders();
 
-            orders.RemoveAt(0);
+            if (orders.Count > 0)
+            {
+                orders.RemoveAt(0);
+            }
 
             Update.CompleteCustomerOrder(orders);
+            SetWaitTime();
             SetItemListView(orders);
         }
         private void SetWaitTime()
@@ -62,6 +66,12 @@ namespace HotXpressTime
                     QueueBlock.Text = $"{orderCount} in queue";
 
                 }
+            }
+            else
+            {
+                UpdateWaitTimeBlock.Text = "No Orders!";
+                QueueBlock.Text = "Nothing in Queue";
+
             }
         }
     }

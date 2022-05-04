@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1792" Width="828">
+        Title="MainWindow" Height="980" Width="860">
     <Window.Background>
         <ImageBrush 
                ImageSource="images/figDisplay1.PNG"
                Opacity=".5"/>
     </Window.Background>
     <ScrollViewer>
-        <Grid Height="1792" Width="828">
+        <Grid Height="1792" Width="800">
             <Frame x:Name="MainWindowFrame" Margin="0,0,0,10" NavigationUIVisibility="Hidden"/>
             <StackPanel Orientation="Horizontal" Height="124" VerticalAlignment="Top">
                 <Button x:Name="Menu_Button" Content="Menu" 

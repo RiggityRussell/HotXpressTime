@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="EmployeeWindow" Height="1792" Width="828" Background="#FFF4AC6C">
-    <Grid Width="771" Margin="28,210,28,282">
+        Title="EmployeeWindow" Height="876" Width="850" Background="#FFF4AC6C">
+    <Grid Width="771" Margin="0,60,39,144" HorizontalAlignment="Right">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="530*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="130*"/>
             <ColumnDefinition Width="241*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="MainWindowFrame" Width="771" Background="Beige" Margin="0,0,0,10" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
-        <ListView x:Name="Orders" Margin="100,244,140,258" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <Frame x:Name="MainWindowFrame" Background="Azure" Margin="-1,-19,1,-83" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3"/>
+        <ListView x:Name="Orders" Margin="80,204,90,80" Grid.ColumnSpan="3" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
 
                 <DataTemplate>
@@ -25,28 +26,28 @@
             </ListView.ItemTemplate>
         </ListView>
         <TextBlock x:Name="WaitTimeBlock" HorizontalAlignment="Left" 
-                       Height="83" 
-                       Margin="10,10,0,0" 
+                       Height="65" 
+                       Margin="29,10,0,0" 
                        TextWrapping="Wrap" 
                        Text=" Wait Time: " 
                        VerticalAlignment="Top" 
-                       Width="239"
+                       Width="226"
                        Background="SandyBrown"
                        Foreground="GhostWhite"
-                       FontSize="45"
+                       FontSize="35"
                        Opacity=".9"/>
         <TextBlock x:Name="QueueBlock" 
                 HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="484,10,0,0" 
+                Height="65" 
+                Margin="87,10,0,0" 
                 TextWrapping="Wrap" 
-                Text=" Queue:" 
+                Text="Nothing in Queue" 
                 VerticalAlignment="Top" 
-                Width="250"
+                Width="251"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
-                FontSize="45"
-                Opacity=".9" Grid.ColumnSpan="2"/>
+                FontSize="30"
+                Opacity=".9" Grid.ColumnSpan="2" Grid.Column="1"/>
         <!--<TextBlock x:Name="UpdateQueueBlock" 
                 HorizontalAlignment="Left" 
                 Height="83" 
@@ -60,16 +61,16 @@
                 FontSize="45"
                 Opacity=".9" Grid.Column="1"/>-->
         <TextBlock x:Name="UpdateWaitTimeBlock" HorizontalAlignment="Left" 
-                Height="83" 
-                Margin="249,10,0,0" 
+                Height="65" 
+                Margin="254,10,0,0" 
                 TextWrapping="Wrap" 
                 Text=" Minutes" 
                 VerticalAlignment="Top" 
                 Width="235"
                 Background="SandyBrown"
                 Foreground="GhostWhite"
-                FontSize="45"
-                Opacity=".9"/>
-        <Button Content="Complete Order" HorizontalAlignment="Left" Margin="165,160,0,0" VerticalAlignment="Top" Height="67" Width="401" Background="#FFF4AC6C" Foreground="#FFFAFDF7" FontSize="45" Grid.ColumnSpan="2" Click="Button_Click"/>
+                FontSize="35"
+                Opacity=".9" Grid.ColumnSpan="2"/>
+        <Button Content="Complete Order" HorizontalAlignment="Left" Margin="190,118,0,0" VerticalAlignment="Top" Height="54" Width="350" Background="#FFF4AC6C" Foreground="#FFFAFDF7" FontSize="35" Grid.ColumnSpan="3" Click="Button_Click"/>
     </Grid>
 </Window>

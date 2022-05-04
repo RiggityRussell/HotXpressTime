@@ -149,9 +149,9 @@ namespace HotXpressTime
 
         internal static void updateCart(menuItems items)
         {
-            using (StreamWriter stream = new StreamWriter("Data/cart.txt", false))
+            using (StreamWriter stream = new StreamWriter("Data/cart.txt", true))
             {
-                string info = $"{items.items},{items.price},1,";
+                string info = $"{items.items}, {items.price}, 1,";
                 stream.Write(info);
                 stream.Close();
             }

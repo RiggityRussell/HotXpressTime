@@ -27,9 +27,10 @@ namespace HotXpressTime
             DateTime end = DateTime.Parse(DateTime.Now.ToShortDateString() + " 8:00 PM");
             if (DateTime.Now > start && DateTime.Now < end)
             {
-                SetWaitTime();
-            }
+                //WHen  we closed
 
+            }
+            SetWaitTime();
             ViewCartButton.Visibility = Visibility.Visible;
             ViewCartButton.Visibility = Visibility.Collapsed;
             //LogInButton.Visibility = Visibility.Collapsed;
@@ -89,14 +90,7 @@ namespace HotXpressTime
                 location = "Closed on Sundays";
                 UpdateLocationBlock.Text = location.ToString();
             }
-
-
-            
-
         }
-
-       
-
         private void navToMenu(object sender, RoutedEventArgs e)
         {
             MainWindowFrame.NavigationService.Navigate(new Uri("Menu_Page.xaml", UriKind.Relative));
