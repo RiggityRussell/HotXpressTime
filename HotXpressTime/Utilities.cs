@@ -132,7 +132,7 @@ namespace HotXpressTime
                 {
                     foreach (string line in fileArray.Skip(2))
                     {
-                        itemDescripton += line + ",";
+                        itemDescripton += line + ", ";
                     }
                    order.MenuItem = itemDescripton;
                        
@@ -149,9 +149,9 @@ namespace HotXpressTime
 
         internal static void updateCart(menuItems items)
         {
-            using (StreamWriter stream = new StreamWriter("Data/cart.txt", true))
+            using (StreamWriter stream = new StreamWriter("Data/cart.txt", append: true))
             {
-                string info = $"{items.items}, {items.price}, 1,";
+                string info = $"{items.items}, {items.price}, {items.quantity},\n";
                 stream.Write(info);
                 stream.Close();
             }
