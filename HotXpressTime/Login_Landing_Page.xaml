@@ -82,5 +82,16 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <TextBlock x:Name="HoursOp" HorizontalAlignment="Center" 
+            Height="72" 
+            Margin="0,211,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            FontSize="50"
+            FontWeight="Bold"
+            Background="LightGray"
+            TextAlignment="Center"
+                   
+            Width="578"/>
     </Grid>
 </Page>
