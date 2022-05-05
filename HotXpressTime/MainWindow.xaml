@@ -6,7 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:HotXpressTime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="860">
+        Title="MainWindow" Height="900" Width="800">
     <Window.Background>
         <ImageBrush 
                ImageSource="images/figDisplay1.PNG"
@@ -168,10 +168,10 @@
                 Margin="0,325,0,0" 
                 Cursor="Hand"
                 VerticalAlignment="Top"
-                Width="808"
+                Width="790"
                     Click="NavToBcnWrpFig"
                 >
-                <Image x:Name="BWF_Button" Source="images/baconfigs.PNG" Width="808" Height="208" Stretch="Fill"/>
+                <Image x:Name="BWF_Button" Source="images/baconfigs.PNG" Width="780" Height="208" Stretch="Fill"/>
             </Button>
             <Button x:Name="PPFT_Button1"  
                 HorizontalAlignment="Left" 
@@ -179,11 +179,11 @@
                 FontSize="50"
                 Height="208" 
                 Cursor="Hand"
-                VerticalAlignment="Center"
-                Width="808"
+                VerticalAlignment="Top"
+                Width="781"
                 Click="NavToPPFT" 
-                 Margin="0,-475,0,0" >
-                <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="808" Height="208" Stretch="Fill"/>
+                 Margin="2,554,0,0" >
+                <Image x:Name="PPFT_Button" Source="images/tacos.PNG" Width="773" Height="208" Stretch="Fill"/>
             </Button>
             <Button x:Name="Fig_Smoothie"  
                 HorizontalAlignment="Left" 
@@ -193,7 +193,7 @@
                 Margin="0,800,0,0" 
                 Cursor="Hand"
                 VerticalAlignment="Top"
-                Width="808"
+                Width="782"
                 Click="NavToFigSmooth">
                 <Image x:Name="FS_Button" Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
@@ -207,7 +207,7 @@
                 Cursor="Hand"
                 Click="FigPannacotta"
                 VerticalAlignment="Top"
-                Width="808">
+                Width="790">
                 <Image x:Name="FP_Button" Source="images/cotta.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
 
@@ -220,7 +220,7 @@
                 Cursor="Hand"
                 VerticalAlignment="Top"
                 Click="NavToFigTart"
-                Width="808">
+                Width="790">
                 <Image x:Name="FT_Button" Source="images/tart.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
             <TextBlock x:Name="Bacon_Wrapped_Figs"
@@ -359,20 +359,20 @@
                 </Button.Resources>
             </Button>
             <Label Name="HoursLabel" 
-               Content="Open: 11am - 8pm          Current Time is:" 
+               Content="Open: 11am - 8pm         Current Time:" 
                HorizontalAlignment="Left"
                Margin="0,265,0,0" 
                VerticalAlignment="Top" 
                Height="60" 
-               Width="697" 
+               Width="616" 
                FontSize="36" 
                FontWeight="Normal" 
                Padding="4,0,4,10"
                Foreground="BlanchedAlmond" Background="#FF353434" />
             <TextBlock x:Name="CurrentTime" HorizontalAlignment="Left" 
-                Height="50" 
+                Height="60" 
                Padding="0,6,2,2"
-                Margin="651,265,0,0" 
+                Margin="620,265,0,0" 
                 TextWrapping="Wrap" 
                 Text="{Binding StringFormat=\{0: hh:mm tt\}, Source={x:Static sys:DateTime.Now}}" 
                 VerticalAlignment="Top" 
@@ -390,6 +390,17 @@
                     </TransformGroup>
                 </TextBlock.RenderTransform>
             </TextBlock>
+
+
+            <TextBlock x:Name="closed"
+                       HorizontalAlignment="Left" 
+                       Margin="66,489,0,0" TextWrapping="Wrap" 
+                       Background="#FF353434"
+                       Foreground="BlanchedAlmond"
+                        FontSize="30"
+                       TextAlignment="Center"
+                       Text="We are currently closed. Please check back during our business hours. Have a FIGTASTIC day!" 
+                       VerticalAlignment="Top" Height="150" Width="631"/>
 
         </Grid>
     </ScrollViewer>

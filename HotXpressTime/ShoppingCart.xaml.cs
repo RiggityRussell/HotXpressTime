@@ -24,6 +24,10 @@ namespace HotXpressTime
         {
             InitializeComponent();
             List<menuItems> menuItems = Utilities.GetCart();
+            if (menuItems.Count > 10)
+            {
+               // menuItems.Clear();
+            }
             Orders.ItemsSource = menuItems;
         }
   

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:HotXpressTime"
       mc:Ignorable="d" 
       d:DesignHeight="1792" d:DesignWidth="828"
-      Title="ShoppingCart" Background="white">
+      Title="ShoppingCart">
 
     <Grid>
         <Grid.RowDefinitions>
