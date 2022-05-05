@@ -15,13 +15,13 @@
         </Grid.RowDefinitions>
 
 
-        <Image x:Name="FS" Source="../images/figSmoothie.jpeg" Stretch="fill" Margin="0,0,0,362" Grid.Row="1" />
+        <Image x:Name="FS" Source="../images/figSmoothie.jpeg" Stretch="fill" Margin="113,495,146,837" Grid.RowSpan="2" />
 
         <TextBox HorizontalAlignment="Center" 
                  TextAlignment="Center"
                  IsHitTestVisible="False"
                  Height="219" 
-                 Margin="0,480,0,0" 
+                 Margin="0,310,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="536" 
@@ -34,7 +34,7 @@
 
         <TextBox HorizontalAlignment="Left"
                  Height="70" 
-                 Margin="4,714,0,0" 
+                 Margin="113,264,0,0" 
                  TextAlignment="Center"
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
@@ -49,10 +49,9 @@
                  BorderBrush="Transparent"/>
         <TextBox Height="245" 
                  IsHitTestVisible="False"
-                 Margin="596,662,-70,0" 
+                 Margin="316,187,146,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Width="301" 
                  Text="INGREDIENTS:&#xA;Figs&#xA;Banana&#xD;&#xA;Milk&#xD;&#xA;Orange Juice&#xD;&#xA;Chia Seeds" 
                  FontSize="30" 
                  FontWeight="Bold" 
@@ -60,7 +59,7 @@
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
-        <TextBox Margin="10,784,682,129" 
+        <TextBox Margin="624,223,10,690" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  Text="PRICE&#xA;$12" 
@@ -73,7 +72,7 @@
 
         <Button x:Name="smoothieCartButton" HorizontalAlignment="Left" 
                 Cursor="Hand"
-                Height="114" Margin="10,910,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Click="Button_Click">
+                Height="114" Margin="624,339,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/images/cartButton.png"/>
             </Button.Background>

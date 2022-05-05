@@ -15,22 +15,21 @@
         </Grid.RowDefinitions>
 
 
-        <Image x:Name="BWF" Source="../images/wrappedFig.jpeg" Stretch="fill" Margin="0,0,0,362" Grid.Row="1" />
+        <Image x:Name="BWF" Source="../images/wrappedFig.jpeg" Stretch="fill" Margin="24,515,71,890" Grid.RowSpan="2" />
         <TextBox HorizontalAlignment="Center" 
                  IsHitTestVisible="False"
                  Height="200" 
-                 Margin="0,480,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="532" Text="Delicious Bacon Wrapped FIGS!" 
                  FontSize="70" FontWeight="Bold"
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
-                 BorderBrush="Transparent"/>
+                 BorderBrush="Transparent" Margin="0,310,0,0"/>
 
         <TextBox HorizontalAlignment="Left" 
                  IsHitTestVisible="False"
-                 Height="68" Margin="24,690,0,0" 
+                 Height="68" Margin="72,132,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="108" 
@@ -44,7 +43,7 @@
                  BorderBrush="Transparent"
                  />
 
-        <TextBox Height="183" Margin="560,667,50,0" 
+        <TextBox Height="183" Margin="205,132,185,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -54,7 +53,7 @@
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
 
-        <TextBox Height="111" Margin="10,758,610,0" 
+        <TextBox Height="111" Margin="450,132,35,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -69,7 +68,7 @@
 
         <Button  
                 HorizontalAlignment="Left" 
-                 Margin="10,900,0,0"
+                 Margin="442,248,0,0"
                  Grid.Row="1" 
                  Width="162" 
                  Click="Button_Click" 
