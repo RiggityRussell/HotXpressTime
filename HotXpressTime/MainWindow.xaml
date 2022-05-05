@@ -197,7 +197,7 @@
                 Click="NavToFigSmooth">
                 <Image x:Name="FS_Button" Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
-            
+
             <Button x:Name="Fig_Panacotta"  
                 HorizontalAlignment="Left" 
                 FontFamily="Georgia"
@@ -241,7 +241,7 @@
      
      BlurRadius="0"/>
                 </TextBlock.Effect></TextBlock>
-       
+
 
             <TextBlock x:Name="Pulled_Pork_Fig_Tacos" Text="Pulled Pork Fig Tacos"
                    HorizontalAlignment="Left" 
@@ -372,7 +372,7 @@
             <TextBlock x:Name="CurrentTime" HorizontalAlignment="Left" 
                 Height="50" 
                Padding="0,6,2,2"
-                Margin="655,265,0,0" 
+                Margin="651,265,0,0" 
                 TextWrapping="Wrap" 
                 Text="{Binding StringFormat=\{0: hh:mm tt\}, Source={x:Static sys:DateTime.Now}}" 
                 VerticalAlignment="Top" 
