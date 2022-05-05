@@ -96,7 +96,9 @@
                 Foreground="WhiteSmoke"
                 Cursor="Hand"
                 FontFamily="Arial"
-                FontSize="40" Margin="386,790,0,0" Click="NavTo_Sign_Up_Page">
+                FontSize="40" 
+                Margin="386,790,0,0" 
+                Click="NavTo_Sign_Up_Page">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -195,6 +197,7 @@
                 Click="NavToFigSmooth">
                 <Image x:Name="FS_Button" Source="images/smoothie.PNG" Width="808" Height="208" Stretch="Fill"/>
             </Button>
+            
             <Button x:Name="Fig_Panacotta"  
                 HorizontalAlignment="Left" 
                 FontFamily="Georgia"
@@ -229,7 +232,17 @@
                    Cursor="Hand"
                    VerticalAlignment="Top" Width="642"
                    FontSize="65"
-                      ><Run Foreground="BlanchedAlmond" Text="Bacon Wrapped Figs"/></TextBlock>
+                      ><Run Foreground="BlanchedAlmond" Text="Bacon Wrapped Figs"/>
+                <TextBlock.Effect>
+                    <DropShadowEffect
+      ShadowDepth="3"
+      Direction="225"
+      Color="black"
+     
+     BlurRadius="0"/>
+                </TextBlock.Effect></TextBlock>
+       
+
             <TextBlock x:Name="Pulled_Pork_Fig_Tacos" Text="Pulled Pork Fig Tacos"
                    HorizontalAlignment="Left" 
                    Height="112" Margin="83,601,0,0" 
