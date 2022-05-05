@@ -45,18 +45,17 @@
                  BorderBrush="Transparent"
                  />
 
-        <TextBox Height="183" Margin="596,667,-70,0" 
+        <TextBox Height="183" Margin="560,667,50,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
-                 VerticalAlignment="Top"
-                 Width="301" 
+                 VerticalAlignment="Top" 
                  Text="INGREDIENTS:&#xD;&#xA;Goat Cheese&#xD;&#xA;Figs&#xD;&#xA;Bacon" 
                  FontSize="30" FontWeight="Bold" Grid.Row="1"
                  Background="Transparent"
                  Foreground="BlanchedAlmond"
                  BorderBrush="Transparent"/>
 
-        <TextBox Height="111" Margin="10,758,682,0" 
+        <TextBox Height="111" Margin="10,758,610,0" 
                  IsHitTestVisible="False"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 

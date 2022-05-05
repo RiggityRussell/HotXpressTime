@@ -5,10 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:HotXpressTime"
       mc:Ignorable="d" 
-      d:DesignHeight="1792" d:DesignWidth="828"
-      Title="Check_Out" Width="828" Height="1792">
+      d:DesignHeight="1792" d:DesignWidth="800"
+      Title="Check_Out" Width="800" Height="1792">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
         <TextBox x:Name="NameOnCard" 
                  HorizontalAlignment="Center" 
                  Height="75" 
@@ -21,13 +25,13 @@
                  Foreground="DarkGray"
                  Width="698"/>
         <Button x:Name="enterInfoButton" Content="SUBMIT PAYMENT" HorizontalAlignment="Center" 
-            Margin="0,1022,0,0" VerticalAlignment="Top" 
+            Margin="0,294,0,0" VerticalAlignment="Top" 
             Width="540" Height="67" 
                 Cursor="Hand"
             Background="LightCoral"
             Foreground="WhiteSmoke"
             FontFamily="Arial"
-            FontSize="40" Click="saveInfo">
+            FontSize="40" Click="saveInfo" Grid.Row="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -36,24 +40,24 @@
         </Button>
         <TextBox x:Name="EXP" HorizontalAlignment="Left" 
             Height="69" 
-            Margin="101,896,0,0" 
+            Margin="101,168,0,0" 
             TextWrapping="Wrap" 
             VerticalAlignment="Top"
             FontSize="52"
             TextAlignment="Center"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
-            Width="291" Text="MM/YY"/>
+            Width="291" Text="MM/YY" Grid.Row="1"/>
         <TextBox x:Name="CVV" HorizontalAlignment="Left" 
             Height="69" 
-            Margin="512,896,0,0" 
+            Margin="512,168,0,0" 
             TextWrapping="Wrap" 
             VerticalAlignment="Top"
             FontSize="52"
             TextAlignment="Center"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
-            Width="218"/>
+            Width="218" Grid.Row="1"/>
 
         <TextBlock x:Name="PaymentInfoText" HorizontalAlignment="Center" 
                    Height="76" 
@@ -96,7 +100,7 @@
             FontWeight="Bold"
             TextAlignment="Center"
                    
-            Width="480">
+            Width="480" Grid.RowSpan="2">
             <TextBlock.Effect>
                 <DropShadowEffect
       ShadowDepth="3"
@@ -108,7 +112,7 @@
         </TextBlock>
         <TextBlock HorizontalAlignment="Left" 
             Height="67" 
-            Margin="182,841,0,0" 
+            Margin="182,113,0,0" 
             TextWrapping="Wrap" 
             Text="EXP" 
             VerticalAlignment="Top" 
@@ -116,7 +120,7 @@
             FontWeight="Bold"
             TextAlignment="Center"
                    
-            Width="128">
+            Width="128" Grid.Row="1">
             <TextBlock.Effect>
                 <DropShadowEffect
       ShadowDepth="3"
@@ -128,7 +132,7 @@
         </TextBlock>
         <TextBlock HorizontalAlignment="Left" 
             Height="59" 
-            Margin="551,841,0,0" 
+            Margin="551,113,0,0" 
             TextWrapping="Wrap" 
             Text="CVV" 
             VerticalAlignment="Top" 
@@ -136,7 +140,7 @@
             FontWeight="Bold"
             TextAlignment="Center"
                    
-            Width="140">
+            Width="140" Grid.Row="1">
             <TextBlock.Effect>
                 <DropShadowEffect
       ShadowDepth="3"
@@ -149,16 +153,16 @@
         <TextBox x:Name="cardNumber" HorizontalAlignment="Center" 
 
             Height="75" 
-            Margin="0,749,0,0" 
+            Margin="0,21,0,0" 
             TextWrapping="Wrap" 
             VerticalAlignment="Top"
             FontSize="52"
             TextAlignment="Center"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
-            Width="698" />
-        <Image Margin="65,1145,536,517" Source="/images/DiscoverLogo.png" Stretch="Fill"/>
-        <Image Margin="316,1145,283,502" Source="/images/MCLogo.png" Stretch="Fill"/>
-        <Image Margin="557,1142,65,514" Source="/images/VISALogo.png" Stretch="Fill"/>
+            Width="698" Grid.Row="1" />
+        <Image Margin="65,417,536,517" Source="/images/DiscoverLogo.png" Stretch="Fill" Grid.Row="1"/>
+        <Image Margin="316,417,283,502" Source="/images/MCLogo.png" Stretch="Fill" Grid.Row="1"/>
+        <Image Margin="557,414,65,514" Source="/images/VISALogo.png" Stretch="Fill" Grid.Row="1"/>
     </Grid>
 </Page>

@@ -25,71 +25,105 @@ namespace HotXpressTime
             InitializeComponent();
             DateTime start = DateTime.Parse(DateTime.Now.ToShortDateString() + " 11:00 AM");
             DateTime end = DateTime.Parse(DateTime.Now.ToShortDateString() + " 8:00 PM");
-            if (DateTime.Now > start && DateTime.Now < end)
+            if (DateTime.Now < start || DateTime.Now > end)
             {
-                //WHen  we closed
+                Menu_Button.Visibility = Visibility.Collapsed;
+                HotXpressTextBlock.Visibility = Visibility.Collapsed;
+                ViewCartButton.Visibility = Visibility.Collapsed;
+                LoginButton.Visibility = Visibility.Collapsed;
+                SignUpButton.Visibility = Visibility.Collapsed;
+                /*Hide the menu buttons*/
+                BaconWrappedFigs.Visibility = Visibility.Collapsed;
+                PPFT_Button1.Visibility = Visibility.Collapsed;
+                Fig_Smoothie.Visibility = Visibility.Collapsed;
+                Fig_Panacotta.Visibility = Visibility.Collapsed;
+                FT_Button1.Visibility = Visibility.Collapsed;
+                Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+                Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+                Fig_Smoothie1.Visibility = Visibility.Collapsed;
+                Fig_Panacotta1.Visibility = Visibility.Collapsed;
+                Fig_Tart.Visibility = Visibility.Collapsed;
+                //Continue Shopping Button
+                ContinueShopping.Visibility = Visibility.Collapsed;
+                //Checkout Button
+                CheckoutButton.Visibility = Visibility.Collapsed;
+                Checkout.Visibility = Visibility.Collapsed;
+                //Wait time blocks
+                WaitTimeBlock.Visibility = Visibility.Collapsed;
+                UpdateWaitTimeBlock.Visibility = Visibility.Collapsed;
+                QueueBlock.Visibility = Visibility.Collapsed;
+                //Location 
+                Current_Location_Button.Visibility = Visibility.Collapsed;
+                UpdateLocationBlock.Visibility = Visibility.Collapsed;
+                closed.Visibility = Visibility.Visible;
+            }
 
-            }
-            SetWaitTime();
-            ViewCartButton.Visibility = Visibility.Visible;
-            ViewCartButton.Visibility = Visibility.Collapsed;
-            //LogInButton.Visibility = Visibility.Collapsed;
-            SignUpButton.Visibility = Visibility.Collapsed;
-            /*Hide the menu buttons*/
-            BaconWrappedFigs.Visibility = Visibility.Collapsed;
-            PPFT_Button1.Visibility = Visibility.Collapsed;
-            Fig_Smoothie.Visibility = Visibility.Collapsed;
-            Fig_Panacotta.Visibility = Visibility.Collapsed;
-            FT_Button1.Visibility= Visibility.Collapsed;
-            Bacon_Wrapped_Figs.Visibility= Visibility.Collapsed;
-            Pulled_Pork_Fig_Tacos.Visibility= Visibility.Collapsed;
-            Fig_Smoothie1.Visibility= Visibility.Collapsed;
-            Fig_Panacotta1.Visibility= Visibility.Collapsed;
-            Fig_Tart.Visibility= Visibility.Collapsed;
-            //Continue Shopping Button
-            ContinueShopping.Visibility = Visibility.Collapsed;
-            //Checkout Button
-            Checkout.Visibility = Visibility.Collapsed;
-
-            string location;
-
-            DateTime dateValue = DateTime.Today;
-            int newdatevalue = ((int)dateValue.DayOfWeek);
-            if (newdatevalue == 1)
-            {
-                location = "E Front st and Wellington";
-                UpdateLocationBlock.Text = location.ToString();
-            }
-            else if (newdatevalue == 2)
-            {
-                location = "Station st and Railroad Ave";
-                UpdateLocationBlock.Text = location.ToString();
-            }
-            else if (newdatevalue == 3)
-            {
-                location = "E State St and S Union St";
-                UpdateLocationBlock.Text = location.ToString();
-            }
-            else if (newdatevalue == 4)
-            {
-                location = "West Beach Parking Lot";
-                UpdateLocationBlock.Text = location.ToString();
-            }
-            else if (newdatevalue == 5)
-            {
-                location = "Dennos Museum Parking lot";
-                UpdateLocationBlock.Text = location.ToString();
-            }
-            else if (newdatevalue == 6)
-            {
-                location = "Right Brain Brewery lot";
-                UpdateLocationBlock.Text = location.ToString();
-            }
             else
             {
-                location = "Closed on Sundays";
-                UpdateLocationBlock.Text = location.ToString();
+                SetWaitTime();
+                ViewCartButton.Visibility = Visibility.Visible;
+                ViewCartButton.Visibility = Visibility.Collapsed;
+                //LogInButton.Visibility = Visibility.Collapsed;
+                SignUpButton.Visibility = Visibility.Collapsed;
+                /*Hide the menu buttons*/
+                BaconWrappedFigs.Visibility = Visibility.Collapsed;
+                PPFT_Button1.Visibility = Visibility.Collapsed;
+                Fig_Smoothie.Visibility = Visibility.Collapsed;
+                Fig_Panacotta.Visibility = Visibility.Collapsed;
+                FT_Button1.Visibility = Visibility.Collapsed;
+                Bacon_Wrapped_Figs.Visibility = Visibility.Collapsed;
+                Pulled_Pork_Fig_Tacos.Visibility = Visibility.Collapsed;
+                Fig_Smoothie1.Visibility = Visibility.Collapsed;
+                Fig_Panacotta1.Visibility = Visibility.Collapsed;
+                Fig_Tart.Visibility = Visibility.Collapsed;
+                //Continue Shopping Button
+                ContinueShopping.Visibility = Visibility.Collapsed;
+                //Checkout Button
+                Checkout.Visibility = Visibility.Collapsed;
+
+                closed.Visibility = Visibility.Collapsed;
+
+                string location;
+
+                DateTime dateValue = DateTime.Today;
+                int newdatevalue = ((int)dateValue.DayOfWeek);
+                if (newdatevalue == 1)
+                {
+                    location = "E Front st and Wellington";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 2)
+                {
+                    location = "Station st and Railroad Ave";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 3)
+                {
+                    location = "E State St and S Union St";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 4)
+                {
+                    location = "West Beach Parking Lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 5)
+                {
+                    location = "Dennos Museum Parking lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else if (newdatevalue == 6)
+                {
+                    location = "Right Brain Brewery lot";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
+                else
+                {
+                    location = "Closed on Sundays";
+                    UpdateLocationBlock.Text = location.ToString();
+                }
             }
+            
         }
         private void navToMenu(object sender, RoutedEventArgs e)
         {
@@ -117,7 +151,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
-
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void Nav_ToCheckout(object sender, RoutedEventArgs e)
@@ -145,6 +179,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void Nav_ToLogin(object sender, RoutedEventArgs e)
@@ -170,6 +205,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
 
         }
 
@@ -194,6 +230,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void Change_Day(object sender, RoutedEventArgs e)
@@ -331,7 +368,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
-
+            closed.Visibility = Visibility.Collapsed;
 
         }
 
@@ -359,6 +396,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void NavToFigSmooth(object sender, RoutedEventArgs e)
@@ -385,6 +423,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void FigPannacotta(object sender, RoutedEventArgs e)
@@ -411,6 +450,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void NavToFigTart(object sender, RoutedEventArgs e)
@@ -437,6 +477,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
 
         private void ViewCart(object sender, RoutedEventArgs e)
@@ -462,6 +503,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Visible;
             //Checkout Button
             Checkout.Visibility = Visibility.Visible;
+            closed.Visibility = Visibility.Collapsed;
 
         }
 
@@ -492,6 +534,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
 
         }
 
@@ -519,6 +562,7 @@ namespace HotXpressTime
             ContinueShopping.Visibility = Visibility.Collapsed;
             //Checkout Button
             Checkout.Visibility = Visibility.Collapsed;
+            closed.Visibility = Visibility.Collapsed;
         }
         private void SetWaitTime()
         {
