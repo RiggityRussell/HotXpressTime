@@ -34,5 +34,29 @@ namespace HotXpressTime
             }
 
         }
+        internal static void updateCart(List<menuItems> items)
+        {
+            using (StreamWriter stream = new StreamWriter("Data/cart.txt", false))
+            {
+                foreach (menuItems item in items)
+                {
+                    string info = $"{item.product}, {item.price}, {item.quantity},\n";
+                    stream.Write(info);
+                }
+                stream.Close();
+            }
+        }
+        internal static void updateOrders(List<Orders> items)
+        {
+            using (StreamWriter stream = new StreamWriter("Data/orders.txt", append: true))
+            {
+                foreach (var item in items)
+                {
+                    string info = $"{item.Customer}: , {item.Total}, x{item.Quantity},\n";
+                    stream.Write(info);
+                }
+                stream.Close();
+            }
+        }
     }
 }

@@ -67,7 +67,10 @@ namespace HotXpressTime
 
                 fileArray = item.Split(',');
                 menuItem.product = fileArray[0];
-                menuItem.price = Convert.ToDouble(fileArray[1]);
+                if(fileArray[1] != "")
+                {
+                    menuItem.price = Convert.ToDouble(fileArray[1]);
+                }
                 menuItem.quantity = Convert.ToInt32(fileArray[2]);
                 /*if (fileArray.Length > 3)
                 {
@@ -125,11 +128,10 @@ namespace HotXpressTime
             //Get Item details from menu
             menuItems item = listMenuItems.Find(x => x.product == selectedItem);
 
-            List<menuItems> updatedCart = CombineDuplicateItems(item);
-
-            if (updatedCart != null)
+            if(item != null)
             {
-                updateCart(updatedCart);
+                List<menuItems> updatedCart = CombineDuplicateItems(item);
+                Update.updateCart(updatedCart);
             }
         }
         internal static List<Orders> GetCustomerOrders()
@@ -169,63 +171,31 @@ namespace HotXpressTime
         {
             List<menuItems> currentCart =  GetCart();
             List<menuItems> updatedCart = new List<menuItems>();
-            if (currentCart.Count != 0)
+            menuItems oldItem = new menuItems();
+            menuItems tempItem = new menuItems();
+            foreach (var cartItem in currentCart.Where(x => x.product == item.product))
             {
-                foreach (var cartItem in currentCart)
-                {
-                    menuItems product = new menuItems();
+                oldItem = cartItem;
+                tempItem.product = item.product;
+                tempItem.price = cartItem.price + item.price;
+                tempItem.quantity = cartItem.quantity + item.quantity;
 
-                    if (cartItem.product == item.product)
-                    {
-                        //Combine quantity and total of same products
-                        product.product = item.product;
-                        product.price = cartItem.price + item.price;
-                        product.quantity = cartItem.quantity + 1;
-
-                        updatedCart.Add(product);
-                    }
-                    else
-                    {
-                        //add existing cart items into updated cart
-                        product.product = cartItem.product;
-                        product.price = cartItem.price;
-                        product.quantity = cartItem.quantity;
-
-                        updatedCart.Add(product);
-                    }
-                }
+                updatedCart.Add(tempItem);
+            }
+            if (updatedCart.Count > 0)
+            {
+                //Remove old Item then add new
+                currentCart.Remove(oldItem);
+                currentCart.Add(tempItem);
             }
             else
             {
-                updatedCart.Add(item);
+                //Only hits if item does not exist in cart already
+                currentCart.Add(item);
             }
+            return currentCart;
+        }
 
-            return updatedCart;
-        }
-        internal static void updateCart(List<menuItems> items)
-        {
-            using (StreamWriter stream = new StreamWriter("Data/cart.txt", append: true))
-            {
-                foreach (menuItems item in items)
-                {
-                    string info = $"{item.product}, {item.price}, {item.quantity},\n";
-                    stream.Write(info);
-                }
-                stream.Close();
-            }
-        }
-        internal static void updateOrders(List<Orders> items)
-        {
-            using (StreamWriter stream = new StreamWriter("Data/orders.txt", append: true))
-            {
-                foreach (var item in items)
-                {
-                    string info = $"{item.Customer}: , ${item.Total}, x{item.Quantity},\n";
-                    stream.Write(info);
-                }
-                stream.Close();
-            }
-        }
 
         private static List<(string userID, string userName, string password)> GetUserInfoData()
         {

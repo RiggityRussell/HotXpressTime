@@ -64,7 +64,7 @@ namespace HotXpressTime
                 if(menuItems.Count > 0)
                 {
                     List<Orders> order = Utilities.CreateCustomerOrder(menuItems, custname);
-                    Utilities.updateOrders(order);
+                    Update.updateOrders(order);
                 }
                 else
                 {
