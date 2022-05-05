@@ -26,15 +26,6 @@ namespace HotXpressTime
             InitializeComponent();
         }
 
-
-        /*private void HoursOp (object sender, RoutedEventArgs e)
-        {
-            string time = DateTime.Now.ToString("h:mm tt");
-            Console.WriteLine("We are open from 11am - 8pm\n" +
-                "Current Time: {0}", time);
-        }
-        */
-
             private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
             string username = UsernameBox.Text.ToString();
