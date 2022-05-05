@@ -66,7 +66,7 @@ namespace HotXpressTime
                 string itemDescripton = "";
 
                 fileArray = item.Split(',');
-                menuItem.items = fileArray[0];
+                menuItem.product = fileArray[0];
                 menuItem.price = Convert.ToDouble(fileArray[1]);
                 menuItem.quantity = Convert.ToInt32(fileArray[2]);
                 /*if (fileArray.Length > 3)
@@ -89,6 +89,22 @@ namespace HotXpressTime
             return itemList;
         }
 
+        internal static List<Orders> CreateCustomerOrder(List<menuItems> menuItems, string customerName)
+        {
+            //returning a list of orders to allow for easier streamwriting
+            List<Orders> order = new List<Orders>();
+            Orders tempOrder = new Orders();
+
+            foreach (var item in menuItems)
+            {
+                tempOrder.Customer = customerName;
+                tempOrder.Total = item.price;
+                tempOrder.MenuItem = item.product;
+                tempOrder.Quantity = item.quantity;
+                order.Add(tempOrder);
+            }
+            return order;
+        }
 
         public static void getMenuItem(string selectedItem)
         {
@@ -100,17 +116,20 @@ namespace HotXpressTime
             {
                 menuItems menuItems = new menuItems();
                 menuItem = line.Split(',');
-                menuItems.items = menuItem[0];
+                menuItems.product = menuItem[0];
                 menuItems.price = Convert.ToDouble(menuItem[1]);
                 menuItems.quantity = 1;
                 listMenuItems.Add(menuItems);
             }
 
-            menuItems items = listMenuItems.Find(x => x.items == selectedItem);
+            //Get Item details from menu
+            menuItems item = listMenuItems.Find(x => x.product == selectedItem);
 
-            if (items != null)
+            List<menuItems> updatedCart = CombineDuplicateItems(item);
+
+            if (updatedCart != null)
             {
-                updateCart(items);
+                updateCart(updatedCart);
             }
         }
         internal static List<Orders> GetCustomerOrders()
@@ -145,14 +164,65 @@ namespace HotXpressTime
                 itemList.Add(order);
             }
             return itemList;
-        }    
+        }
+        private static List<menuItems> CombineDuplicateItems(menuItems? item)
+        {
+            List<menuItems> currentCart =  GetCart();
+            List<menuItems> updatedCart = new List<menuItems>();
+            if (currentCart.Count != 0)
+            {
+                foreach (var cartItem in currentCart)
+                {
+                    menuItems product = new menuItems();
 
-        internal static void updateCart(menuItems items)
+                    if (cartItem.product == item.product)
+                    {
+                        //Combine quantity and total of same products
+                        product.product = item.product;
+                        product.price = cartItem.price + item.price;
+                        product.quantity = cartItem.quantity + 1;
+
+                        updatedCart.Add(product);
+                    }
+                    else
+                    {
+                        //add existing cart items into updated cart
+                        product.product = cartItem.product;
+                        product.price = cartItem.price;
+                        product.quantity = cartItem.quantity;
+
+                        updatedCart.Add(product);
+                    }
+                }
+            }
+            else
+            {
+                updatedCart.Add(item);
+            }
+
+            return updatedCart;
+        }
+        internal static void updateCart(List<menuItems> items)
         {
             using (StreamWriter stream = new StreamWriter("Data/cart.txt", append: true))
             {
-                string info = $"{items.items}, {items.price}, {items.quantity},\n";
-                stream.Write(info);
+                foreach (menuItems item in items)
+                {
+                    string info = $"{item.product}, {item.price}, {item.quantity},\n";
+                    stream.Write(info);
+                }
+                stream.Close();
+            }
+        }
+        internal static void updateOrders(List<Orders> items)
+        {
+            using (StreamWriter stream = new StreamWriter("Data/orders.txt", append: true))
+            {
+                foreach (var item in items)
+                {
+                    string info = $"{item.Customer}: , ${item.Total}, x{item.Quantity},\n";
+                    stream.Write(info);
+                }
                 stream.Close();
             }
         }

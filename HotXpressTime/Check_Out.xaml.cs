@@ -35,7 +35,7 @@ namespace HotXpressTime
 
             if(!nameIsValid)
             { 
-                 MessageBox.Show($"Invalid Name Entry: {NameOnCard.Text}");
+                MessageBox.Show($"Invalid Name Entry: {NameOnCard.Text}");
                 NameOnCard.Clear();
             }
             if (!cardIsValid)
@@ -57,7 +57,22 @@ namespace HotXpressTime
 
             if (nameIsValid && cardIsValid && expIsValid && cvvIsValid)
             {
+                string custname = NameOnCard.Text;
+
                 MessageBox.Show($"Thank you for submitting your order!");
+                List<menuItems> menuItems = Utilities.GetCart();
+                if(menuItems.Count > 0)
+                {
+                    List<Orders> order = Utilities.CreateCustomerOrder(menuItems, custname);
+                    Utilities.updateOrders(order);
+                }
+                else
+                {
+                    //Probably don't have time to add this.
+                    //Message to user their cart is empty.
+                    //This check should really happen before seeing this page too.
+                }
+
                 this.Content = null;
             }
         }
@@ -106,7 +121,9 @@ namespace HotXpressTime
         {
             bool isValid = true;
 
-            /*DateTime myDateTime = DateTime.Now;                                           //To check for expiration
+            //To check for expiration
+
+            /*DateTime myDateTime = DateTime.Now;                                           
             string currentYear = myDateTime.Year.ToString();*/
 
             string[] date = EXP.Text.Split('/');

@@ -20,7 +20,7 @@
 
                 <DataTemplate>
                     <WrapPanel Background="Tan">
-                        <TextBlock Text="{Binding items}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding product}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
                         <TextBlock Text="{Binding price}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap"/>
                         <TextBlock Text="{Binding quantity}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
                     </WrapPanel>

@@ -10,7 +10,7 @@ namespace HotXpressTime
     {
         public string? Customer { get; set; }
         public double  Total { get; set; }
-        public string MenuItem { get; set; }
+        public string? MenuItem { get; set; }
         public int? Quantity { get; set; }
     }
 }
