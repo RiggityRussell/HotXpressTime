@@ -31,10 +31,19 @@ namespace HotXpressTime.MenuItems
             switch (result)
             {
                 case MessageBoxResult.Yes:
-                    MessageBox.Show("You have added 1 Order \nof Fig Tart to your cart.");
-                    string item = "Fig Tart";
 
-                    Utilities.getMenuItem(item);
+                    string item = "Fig Tart";
+                    var orderTotal = Utilities.GetCart().Count();
+                    if (orderTotal >= 10)
+                    {
+                        MessageBox.Show("Sorry, we only allow \n" +
+                            "           10 orders per customer!");
+                    }
+                    else
+                    {
+                        Utilities.getMenuItem(item);
+                        MessageBox.Show("You have added 1 Order \nof Fig Tart to your cart.");
+                    }
                     break;
                 case MessageBoxResult.No:
                     MessageBox.Show("More for me then!");
