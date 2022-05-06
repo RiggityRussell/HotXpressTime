@@ -47,7 +47,7 @@
             TextAlignment="Center"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
-            Width="291" Text="MM/YY" Grid.Row="1"/>
+            Width="291" Text="MM/YYYY" Grid.Row="1"/>
         <TextBox x:Name="CVV" HorizontalAlignment="Left" 
             Height="69" 
             Margin="512,168,0,0" 
