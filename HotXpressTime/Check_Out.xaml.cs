@@ -53,9 +53,9 @@ namespace HotXpressTime
                 MessageBox.Show($"Invalid CVV: {CVV.Text}");
                 CVV.Clear();
             }
-            
 
-            if (nameIsValid && cardIsValid && expIsValid && cvvIsValid)
+
+            if (true)
             {
                 string custname = NameOnCard.Text;
 
@@ -65,6 +65,7 @@ namespace HotXpressTime
                 {
                     List<Orders> order = Utilities.CreateCustomerOrder(menuItems, custname);
                     Update.updateOrders(order);
+                    Update.updateEmployeeOrderFile(order);
                 }
                 else
                 {
@@ -75,6 +76,7 @@ namespace HotXpressTime
 
                 this.Content = null;
             }
+
         }
 
         //Name Validation - Checks name for invalid characters, returns false message if invalid
@@ -170,5 +172,6 @@ namespace HotXpressTime
             }
             return isValid;
         }
+
     }
  }

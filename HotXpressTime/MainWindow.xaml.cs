@@ -25,7 +25,7 @@ namespace HotXpressTime
             InitializeComponent();
             DateTime start = DateTime.Parse(DateTime.Now.ToShortDateString() + " 11:00 AM");
             DateTime end = DateTime.Parse(DateTime.Now.ToShortDateString() + " 8:00 PM");
-            if (DateTime.Now < start || DateTime.Now > end)
+            if (false)
             {
                 Menu_Button.Visibility = Visibility.Collapsed;
                 HotXpressTextBlock.Visibility = Visibility.Collapsed;

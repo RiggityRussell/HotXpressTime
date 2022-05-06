@@ -48,13 +48,39 @@ namespace HotXpressTime
         }
         internal static void updateOrders(List<Orders> items)
         {
+            //save all data points for customer view
             using (StreamWriter stream = new StreamWriter("Data/orders.txt", append: true))
             {
                 foreach (var item in items)
                 {
-                    string info = $"{item.Customer}: , {item.Total}, x{item.Quantity},\n";
+                    string info = $"{item.Customer} , {item.Total} , {item.MenuItem},\n";
                     stream.Write(info);
                 }
+                stream.Close();
+            }
+        }
+
+        internal static void updateEmployeeOrderFile(List<Orders> items)
+        {
+            // Save different data points for employee to view
+            using (StreamWriter stream = new StreamWriter("Data/EmployeeOrderFile.txt", append: true))
+            {
+                string info = "";
+                for (int i = 0; i < items.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        info = $"{items[i].Customer}:  {items[i].MenuItem} x{items[i].Quantity},";
+
+                    }
+                    else
+                    {
+                        info = $" {info}  {items[i].MenuItem} x{items[i].Quantity},";
+                    }
+                }
+
+                stream.Write(info);
+
                 stream.Close();
             }
         }

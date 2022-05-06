@@ -28,7 +28,27 @@ namespace HotXpressTime
             {
                // menuItems.Clear();
             }
-            Orders.ItemsSource = menuItems;
+
+            Orders.ItemsSource = Orders.ItemsSource = menuItems; //your query result 
+            GridViewColumn column = new GridViewColumn();
+            column.Header = "Product";
+            column.DisplayMemberBinding = new Binding("product");
+            GridViewControl.Columns.Add(column);
+
+            GridViewColumn column2 = new GridViewColumn();
+            column2.Header = "Price";
+            column2.DisplayMemberBinding = new Binding("price");
+            GridViewControl.Columns.Add(column2);
+
+            GridViewColumn column3 = new GridViewColumn();
+            column3.Header = "Quantity";
+            column3.DisplayMemberBinding = new Binding("quantity");
+            GridViewControl.Columns.Add(column3);
+
+
+
+
+            //Orders.ItemsSource = menuItems;
         }
   
     }

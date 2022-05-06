@@ -15,8 +15,11 @@
         </Grid.RowDefinitions>
         <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
         <Label Foreground="black">Shopping Cart</Label>
-        <ListView x:Name="Orders" Margin="57,402,57,579" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2">
-            <ListView.ItemTemplate>
+        <ListView x:Name="Orders" Margin="57,402,57,579" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="tan" Grid.RowSpan="2" FontSize="30">
+            <ListView.View>
+                <GridView x:Name="GridViewControl"/>
+            </ListView.View>
+            <!--<ListView.ItemTemplate>
 
                 <DataTemplate>
                     <WrapPanel Background="Tan">
@@ -25,7 +28,7 @@
                         <TextBlock Text="{Binding quantity}" FontWeight="Bold" FontSize="30px" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
                     </WrapPanel>
                 </DataTemplate>
-            </ListView.ItemTemplate>
+            </ListView.ItemTemplate>-->
         </ListView>
         <Border BorderThickness="1" Grid.Row="1"
         CornerRadius="50,50,125,125" BorderBrush="Black" Background="#210f33" Margin="-2,512,2,0"/>

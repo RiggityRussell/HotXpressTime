@@ -24,7 +24,5 @@ namespace HotXpressTime
         {
             InitializeComponent();
         }
-
-       
     }
 }

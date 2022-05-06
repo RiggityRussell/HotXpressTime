@@ -53,7 +53,7 @@ namespace HotXpressTime
             SetWaitTime();
             SetItemListView(orders);
         }
-        private void SetWaitTime()
+        public void SetWaitTime()
         {
             List<Orders> orders = Utilities.GetCustomerOrders();
             int orderCount = orders.Count;

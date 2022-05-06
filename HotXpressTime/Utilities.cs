@@ -63,8 +63,6 @@ namespace HotXpressTime
             foreach (var item in fileContents)
             {
                 menuItems menuItem = new menuItems();
-                string itemDescripton = "";
-
                 fileArray = item.Split(',');
                 menuItem.product = fileArray[0];
                 if(fileArray[1] != "")
@@ -72,20 +70,6 @@ namespace HotXpressTime
                     menuItem.price = Convert.ToDouble(fileArray[1]);
                 }
                 menuItem.quantity = Convert.ToInt32(fileArray[2]);
-                /*if (fileArray.Length > 3)
-                {
-
-                    foreach (string line in fileArray.Skip(2))
-                    {
-                        itemDescripton += line + ",";
-                    }
-                    menuItem.MenuItem = itemDescripton;
-
-                }
-                else
-                {
-                    menuItem.MenuItem = fileArray[2];
-                }*/
 
                 itemList.Add(menuItem);
             }
@@ -96,10 +80,11 @@ namespace HotXpressTime
         {
             //returning a list of orders to allow for easier streamwriting
             List<Orders> order = new List<Orders>();
-            Orders tempOrder = new Orders();
 
             foreach (var item in menuItems)
             {
+                Orders tempOrder = new Orders();
+
                 tempOrder.Customer = customerName;
                 tempOrder.Total = item.price;
                 tempOrder.MenuItem = item.product;
@@ -167,7 +152,8 @@ namespace HotXpressTime
             }
             return itemList;
         }
-        private static List<menuItems> CombineDuplicateItems(menuItems? item)
+
+        private static List<menuItems> CombineDuplicateItems(menuItems item)
         {
             List<menuItems> currentCart =  GetCart();
             List<menuItems> updatedCart = new List<menuItems>();
